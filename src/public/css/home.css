@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #191c26;
+}
+
+/* header */
+nav {
+  margin: 20px 0;
+  /* border: 1px solid yellow; */
+}
+
+/* Phần dùng chung */
+a {
+  text-decoration: none;
+}
+
+span {
+  color: aliceblue;
+}
+
+.row {
+  margin: 0 50px;
+}
+
+.displayFlex {
+  display: flex;
+}
+
+.displayFlexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__columnFlex {
+  display: flex;
+  align-items: center;
+}
+
+.header__logoTek4 {
+  margin-right: 30px;
+}
+
+.header__blockSearch {
+  border-radius: 5px;
+  background-color: rgb(27, 31, 39);
+  display: flex;
+  align-items: center;
+  height: 35px;
+}
+
+.header__blockSearch-logoSearch {
+  margin: 0 5px;
+}
+
+.header__blockSearch-inputSearch {
+  background-color: transparent;
+  border: none;
+  font-family: Inter;
+  font-size: 14px;
+  color: 868991;
+}
+
+.column-2 {
+  /* cột 2 cách cột 1 và 3 ra 2 bên */
+  margin: 0 auto;
+}
+
+.header__coursesAndNews {
+  margin: 0 30px;
+}
+
+.header__loginAndRegister {
+  margin-left: 30px;
+  margin-right: 12px;
+}
+
+.header__banner {
+  width: 100%;
+  height: 8rem;
+}
+
+.description {
+  margin-top: 10px;
+}
+
+.description__columnMargin60px {
+  margin: 0 60px;
+  border: 1px solid yellow;
+}
+
+.paddingLeftRight35px {
+  padding: 0 35px;
+}
+
+.description__description1 {
+  margin-top: 90px;
+  font-size: 2rem;
+  font-weight: 700;
+  width: 460px;
+}
+
+.description__btnStartNow {
+  background-color: #d54253;
+  padding: 17px 63px;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 45px 0;
+}
+
+.description__logoCode {
+  margin-left: 0;
+  background-color: #8a96ff;
+  height: 115px;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 65px;
+}
+
+.description__blockDescription2 {
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 1px solid rgba(138, 150, 255, 0.369);
+  font-style: italic;
+  color: #8a96ff;
+}
