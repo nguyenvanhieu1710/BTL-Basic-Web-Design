@@ -1,41 +1,7 @@
-body {
-  margin: 0;
-  font-family: sans-serif;
-  background-color: #191c26;
-}
-
 /* header */
 nav {
   margin: 20px 0;
   /* border: 1px solid yellow; */
-}
-
-/* Phần dùng chung */
-a {
-  text-decoration: none;
-}
-
-span {
-  color: aliceblue;
-}
-
-.row {
-  margin: 0 50px;
-}
-
-.displayFlex {
-  display: flex;
-}
-
-.displayFlexCenter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.header__columnFlex {
-  display: flex;
-  align-items: center;
 }
 
 .header__logoTek4 {
@@ -45,8 +11,6 @@ span {
 .header__blockSearch {
   border-radius: 5px;
   background-color: rgb(27, 31, 39);
-  display: flex;
-  align-items: center;
   height: 35px;
 }
 
@@ -59,7 +23,7 @@ span {
   border: none;
   font-family: Inter;
   font-size: 14px;
-  color: 868991;
+  color: #868991;
 }
 
 .column-2 {
@@ -68,6 +32,7 @@ span {
 }
 
 .header__coursesAndNews {
+  /* 2 img cách nhau */
   margin: 0 30px;
 }
 
@@ -83,26 +48,18 @@ span {
 
 .description {
   margin-top: 10px;
-}
-
-.description__columnMargin60px {
-  margin: 0 60px;
-  border: 1px solid yellow;
-}
-
-.paddingLeftRight35px {
-  padding: 0 35px;
+  background: url("../img/hero-bg.png");
+  /* border: 1px solid yellow; */
 }
 
 .description__description1 {
   margin-top: 90px;
   font-size: 2rem;
   font-weight: 700;
-  width: 460px;
+  /* border: 1px solid blue; */
 }
 
 .description__btnStartNow {
-  background-color: #d54253;
   padding: 17px 63px;
   border-radius: 5px;
   font-size: 1.25rem;
@@ -111,20 +68,177 @@ span {
 }
 
 .description__logoCode {
-  margin-left: 0;
   background-color: #8a96ff;
-  height: 115px;
+  padding: 2.9rem 1rem;
   border-radius: 5px;
   margin-right: 10px;
-  width: 65px;
 }
 
 .description__blockDescription2 {
   border-radius: 5px;
   padding: 1rem;
-  font-size: 1rem;
+  font-size: 0.8125rem;
   font-weight: 600;
   border: 1px solid rgba(138, 150, 255, 0.369);
   font-style: italic;
-  color: #8a96ff;
+}
+
+.description__backgroundImg {
+  /* position: absolute; */
+  width: 42.4375rem;
+  /* height: 48.4375rem; */
+  right: 0;
+  margin-left: 60px;
+  height: 640px;
+}
+
+.description__titleLogo {
+  margin-left: 1.56rem;
+}
+
+.description__title {
+  margin-top: 0.875rem;
+}
+
+.description__titleText {
+  font-weight: 600;
+  color: #b8bcc6;
+  font-size: 0.875rem;
+  margin-left: 0.5rem;
+}
+
+.description__Python {
+  background-color: #15171e;
+  width: 18.625rem;
+  position: absolute;
+  top: 4rem;
+  left: 15rem;
+  font-size: 0.75rem;
+  border: 0.8px solid;
+  border-radius: 0.2rem;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(180deg, #589c98 100%, #94ffff 0);
+  /* độ ưu tiên cao hơn */
+  z-index: 10;
+}
+
+.description__Cplusplus {
+  width: clamp(19rem, 17vw, 25rem);
+  height: clamp(10.75rem, 17vh, 15rem);
+  background-color: #15171e;
+  position: absolute;
+  top: 14.5rem;
+  left: clamp(16rem, 28vw, 25.5rem);
+  font-size: 0.75rem;
+  border: 1px solid;
+  border-radius: 0.3rem;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(180deg, #85a0ff 59%, #7c99ff 0);
+  /* độ ưu tiên cao hơn */
+  z-index: 10;
+}
+
+.description__JavaScript {
+  width: clamp(16.9375rem, 16vw, 20rem);
+  position: absolute;
+  top: 27.125rem;
+  left: 13rem;
+  font-size: 0.75rem;
+  background-color: #15171e;
+  border-radius: 0.2rem;
+  border: 0.7px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(180deg, #60589c 100%, #a092ff 0);
+  /* độ ưu tiên cao hơn */
+  z-index: 10;
+  padding-bottom: 0.75rem;
+}
+
+.description__contentOfLanguage {
+  font-family: Inconsolata, Inter;
+  margin-left: 3.875rem;
+  margin-right: 1.32rem;
+  font-weight: 400;
+  margin-bottom: 0.625rem;
+}
+
+.description__contentOfLanguage div {
+  /* khoảng cách dòng */
+  margin: 5px 0;
+}
+
+.description__blockLine {
+  position: absolute;
+  top: 11rem;
+  width: clamp(19.5rem, 30.4vw, 27.375rem);
+  height: 17.1rem;
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    90deg,
+    #790fff,
+    #f99da8,
+    #ffd0a4,
+    #4a72ff
+  );
+}
+
+.courses {
+  padding: 3.5rem 0;
+}
+
+.course__Title {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #fafbfc;
+}
+
+.course__Text {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #b8bcc6;
+}
+
+.blockCourse {
+  height: 90%;
+  margin: 0 1rem;
+  background-color: #111319;
+  padding: 1.5rem 1rem;
+  border: 1px solid #3d4048;
+  border-radius: 0.5rem;
+}
+
+.course__blockImage {
+  position: relative;
+  width: 23.125rem;
+  height: 18.625rem;
+  border-radius: 0.5rem;
+}
+
+.course__blockImage-img {
+  border-radius: 0.5rem;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  inset: 0px;
+  color: transparent;
+}
+
+.course__descriptionDetailCourse {
+  width: 23.125rem;
+}
+
+.course__descriptionDetailCourse div {
+  margin: 10px 0;
+}
+
+.course__blockBtnStudyNow {
+  float: right;
+}
+.course__studyNow {
+  padding: 0.8rem 1.25rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 16px rgba(79, 9, 17, 0.24), inset 0 4px 4px #f36464;
+  width: 6.4375rem;
+  margin-bottom: 20px;
 }

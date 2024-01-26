@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../../public/css/all.css">
     <link rel="stylesheet" href="../../../public/css/home.css">
 </head>
 
@@ -16,29 +18,29 @@
     <header>
         <nav>
             <div class="row displayFlex">
-                <div class="column column-1 header__columnFlex">
+                <div class="column column-1 FlexAlign-itemsCenter">
                     <a href="" class="header__logoTek4">
                         <img src="../../../public/img/logo.webp" alt="Logo Tek4">
                     </a>
-                    <div class="header__blockSearch">
+                    <div class="header__blockSearch FlexAlign-itemsCenter">
                         <img class="header__blockSearch-logoSearch" src="../../../public/img/search-default-icon.svg"
                             alt="Search">
                         <input class="header__blockSearch-inputSearch" disabled placeholder="Tìm kiếm trên TEK4.VN">
                     </div>
                 </div>
-                <div class="column column-2 header__columnFlex">
-                    <a href="" class="header__coursesAndNews">
-                        <img src="../../../public/img/course.svg" alt="Course">
+                <div class="column column-2 FlexAlign-itemsCenter">
+                    <a href="#" class="header__coursesAndNews">
+                        <img class="logoImage" src="../../../public/img/course.svg" alt="Course">
                     </a>
-                    <a href="" class="header__coursesAndNews">
-                        <img src="../../../public/img/news2.svg" alt="News">
+                    <a href="#" class="header__coursesAndNews">
+                        <img class="logoImage" src="../../../public/img/news2.svg" alt="News">
                     </a>
                 </div>
-                <div class="column column-3 header__columnFlex">
-                    <a href="">
-                        <img src="../../../public/img/menu.svg" alt="Menu">
+                <div class="column column-3 FlexAlign-itemsCenter">
+                    <a href="#">
+                        <img class="logoImage" src="../../../public/img/menu.svg" alt="Menu">
                     </a>
-                    <a href="" class="header__loginAndRegister">
+                    <a href="#" class="header__loginAndRegister">
                         <span>Đăng nhập/Đăng ký</span>
                     </a>
                 </div>
@@ -51,20 +53,20 @@
     <main>
         <section class="description">
             <div class="row displayFlex">
-                <div class="column description__columnMargin60px paddingLeftRight35px">
-                    <div class="description__description1">
+                <div class="column margin-left60px paddingLeftRight35px positionRelative">
+                    <div class="description__description1 width460px">
                         <span>Nơi tốt nhất để học tập, rèn luyện kỹ năng, tìm kiếm việc làm và chia sẻ tri thức</span>
                     </div>
 
-                    <button class="description__btnStartNow">
+                    <button class="description__btnStartNow background-colorHexd54253">
                         <span>Bắt đầu ngay</span>
                     </button>
 
-                    <div class="description__iconAndDescription displayFlex">
+                    <div class="description__iconAndDescription displayFlex width460px">
                         <div class="description__logoCode displayFlexCenter">
                             <img src="../../../public/img/code.svg" alt="Code">
                         </div>
-                        <div class="description__blockDescription2">
+                        <div class="description__blockDescription2 colorHex8a96ff">
                             Học dễ hiểu - Đi đúng lộ trình
                             <br>
                             Rèn luyện kỹ năng bài bản - Nhận phản hồi trực tiếp
@@ -73,23 +75,252 @@
                         </div>
                     </div>
                 </div>
-                <div class="column description__columnMargin60px">
-                    <div>Python</div>
-                    <div>C++</div>
-                    <div>JavaScript</div>
+                <div class="column description__programmingLanguage paddingLeftRight35px positionRelative">
+                    <div class="description__backgroundImg">
+                        <img class="description__backgroundImg-img" src="../../../public/img/circle3.webp"
+                            alt="ImageCricle">
+                    </div>
+                    <div class="description__Python">
+                        <div class="description__title displayFlex">
+                            <div class="description__titleLogo">
+                                <img class="logoImage" src="../../../public/img/python-red-icon.svg" alt="">
+                            </div>
+                            <div class="description__titleText">Python</div>
+                        </div>
+                        <div class="description__contentOfLanguage">
+                            <div>
+                                <span class="colorHex1e90ff">import</span>
+                                <span>tensorflow</span>
+                            </div>
+                            <div>
+                                <span class="colorOrange">print</span>
+                                <span>(</span>
+                                <span class="colorLime">“Học”</span>
+                                <span>)</span>
+                            </div>
+                            <div>
+                                <span class="colorOrange">print</span>
+                                <span>(</span>
+                                <span class="colorLime">“Theo lộ trình đầy đủ”</span>
+                                <span>)</span>
+                            </div>
+                            <div>
+                                <span class="colorOrange">print</span>
+                                <span>(</span>
+                                <span class="colorLime">“Phản hồi tức thời với AI”</span>
+                                <span>)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description__Cplusplus">
+                        <div class="description__title displayFlex">
+                            <div class="description__titleLogo">
+                                <img class="logoImage" src="../../../public/img/c++-red-icon.svg" alt="">
+                            </div>
+                            <div class="description__titleText ">C++</div>
+                        </div>
+                        <div class="description__contentOfLanguage">
+                            <div>
+                                <span class="colorHex3d4048">#</span>
+                                <span class="colorHex1e90ff">include</span>
+                                <span class="colorLime">&lt;iostream&gt;</span>
+                            </div>
+                            <div>
+                                <span class="colorHexff0099">int main</span>
+                                <span>()</span>
+                                <span>{</span>
+                            </div>
+                            <div>
+                                <span>std::cout&lt;&lt;</span>
+                                <span class="colorLime">"Luyện tập"</span>
+                                <span> &lt;&lt;endl;</span>
+                            </div>
+                            <div>
+                                <span>std::cout&lt;&lt;</span>
+                                <span class="colorLime">"Phong phú"</span>
+                                <span> &lt;&lt;endl;</span>
+                            </div>
+                            <div>
+                                <span>std::cout&lt;&lt;</span>
+                                <span class="colorLime">"Dự án thực tế"</span>
+                                <span> &lt;&lt;endl;</span>
+                            </div>
+                            <div>
+                                <span>}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description__JavaScript">
+                        <div class="description__title displayFlex">
+                            <div class="description__titleLogo">
+                                <img class="logoImage" src="../../../public/img/js-red-icon.svg" alt="">
+                            </div>
+                            <div class="description__titleText">JavaScript</div>
+                        </div>
+                        <div class="description__contentOfLanguage">
+                            <div>
+                                <span class="colorHexff0099">console.log</span>
+                                <span>(</span>
+                                <span class="colorLime">"Đánh giá"</span>
+                                <span>)</span>
+                            </div>
+                            <div>
+                                <span class="colorHexff0099">console.log</span>
+                                <span>(</span>
+                                <span class="colorLime">"Kỹ năng thiết yếu cho công việc"</span>
+                                <span>)</span>
+                            </div>
+                            <div>
+                                <span class="colorHexff0099">console.log</span>
+                                <span>(</span>
+                                <span class="colorLime">"Kho đề thi chuẩn hóa phong phú"</span>
+                                <span>)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description__blockLine"></div>
                 </div>
             </div>
         </section>
-        <div class="row">
-            <section class="courses">
 
-            </section>
-        </div>
-        <div class="row">
-            <section class="practice">
+        <section class="courses">
+            <div class="row center">
+                <div class="course__Title marginTopBottom5px">Phong cách học tập thực chiến</div>
+                <div class="course__Text marginTopBottom5px">Phương pháp học tốt nhất là thực hành.</div>
+                <div class="course__Text marginTopBottom5px">Hệ thống học tập bài bản theo lộ trình với hàng ngàn bài
+                    tập thực hành. Học là
+                    làm được. Hoàn toàn
+                    miễn phí</div>
+            </div>
 
-            </section>
-        </div>
+            <div class="row center marginTop2rem marginBottom16px">
+                <div class="">
+                    <a href="">
+                        <span class="colorHex8a96ff fontWeight700">Khóa học</span>
+                    </a>
+                    <a href="" class="marginLeftRight50px">
+                        <span>Luyện tập</span>
+                    </a>
+                    <a href="">
+                        <span>Lộ trình</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row displayFlex">
+                <div class="column marginLeftRight0375rem">
+                    <div class="blockCourse">
+                        <div class="course__blockImage marginBottom16px">
+                            <img class="course__blockImage-img" src="../../../public/img/thumbnail.webp" alt="">
+                        </div>
+                        <div class="course__descriptionDetailCourse">
+                            <div class="starAndHeart displayFlexAlign-itemsCenterAndJustify-contentSpace-between">
+                                <span class="assess colorHexffbe3d">
+                                    5.0
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span class="colorHex868990">[65563]</span>
+                                </span>
+                                <div><i class="fa-solid fa-heart"></i></div>
+                            </div>
+                            <a href="">
+                                <span class="fontWeight700 font-size1125rem">
+                                    Lập trình Python cơ bản
+                                </span>
+                            </a>
+                            <div>259 <span class="colorHexb8bcc6">bài học</span></div>
+                            <div>Độ khó: <span class="colorHexb8bcc6">Dễ</span></div>
+                            <div class="colorHex1e90ff">Nghề nghiệp</div>
+                            <div class="course__blockBtnStudyNow">
+                                <button class="course__studyNow background-colorHexd54253">
+                                    <span>Học ngay</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="column marginLeftRight0375rem">
+                    <div class="blockCourse">
+                        <div class="course__blockImage marginBottom16px">
+                            <img class="course__blockImage-img" src="../../../public/img/thumbnail (1).webp" alt="">
+                        </div>
+                        <div class="course__descriptionDetailCourse">
+                            <div class="starAndHeart displayFlexAlign-itemsCenterAndJustify-contentSpace-between">
+                                <span class="assess colorHexffbe3d">
+                                    5.0
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span class="colorHex868990">[45740]</span>
+                                </span>
+                                <div><i class="fa-solid fa-heart"></i></div>
+                            </div>
+                            <a href="">
+                                <span class="fontWeight700 font-size1125rem">
+                                    Lập trình C cơ bản
+                                </span>
+                            </a>
+                            <div>245 <span class="colorHexb8bcc6">bài học</span></div>
+                            <div>Độ khó: <span class="colorHexb8bcc6">Dễ</span></div>
+                            <div class="colorHex1e90ff">Nghề nghiệp</div>
+                            <div class="course__blockBtnStudyNow">
+                                <button class="course__studyNow background-colorHexd54253">
+                                    <span>Học ngay</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column marginLeftRight0375rem">
+                    <div class="blockCourse">
+                        <div class="course__blockImage marginBottom16px">
+                            <img class="course__blockImage-img " src="../../../public/img/thumbnail (2).webp" alt="">
+                        </div>
+                        <div class="course__descriptionDetailCourse">
+                            <div class="starAndHeart displayFlexAlign-itemsCenterAndJustify-contentSpace-between">
+                                <span class="assess colorHexffbe3d">
+                                    5.0
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span class="colorHex868990">[43731]</span>
+                                </span>
+                                <div><i class="fa-solid fa-heart"></i></div>
+                            </div>
+                            <a href="">
+                                <span class="fontWeight700 font-size1125rem">
+                                    Lập trình C++ từ cơ bản đến nâng cao
+                                </span>
+                            </a>
+                            <div>2346 <span class="colorHexb8bcc6">bài học</span></div>
+                            <div>Độ khó: <span class="colorHexb8bcc6">Trung bình</span></div>
+                            <div class="colorHex1e90ff">Nghề nghiệp</div>
+                            <div class="course__blockBtnStudyNow">
+                                <button class="course__studyNow background-colorHexd54253">
+                                    <span>Học ngay</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <button class="course__SeeAll">Xem tất cả</button> -->
+            </div>
+        </section>
+
+        <section class="practice">
+            <div class="row">
+
+            </div>
+        </section>
+
         <div class="row">
             <section class="AIguide">
 
@@ -105,12 +336,10 @@
 
             </section>
         </div>
-        <div class="row">
-            <aside class="products">
-
-            </aside>
-        </div>
     </main>
+    <aside class="products">
+
+    </aside>
     <footer>
 
     </footer>
