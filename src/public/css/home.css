@@ -251,8 +251,6 @@ nav {
 
 .practice {
   background: linear-gradient(0.809turn, #111319 61.65%, #191c26 101.68%);
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .blockPaddingAndWidthHeight {
@@ -340,14 +338,15 @@ nav {
   margin-bottom: 18px;
 }
 
-.AIguide__btnChooseAI {
+.AIguide__btnChooseAI,
+.products__btnBuyNow {
   box-shadow: 0 4px 16px rgba(79, 9, 17, 0.24), inset 0 4px 4px #f36464;
   height: 3.5rem;
   font-size: 1rem;
   font-weight: 600;
   border-radius: 0.5rem;
   padding: 1rem 1.5rem;
-  margin-bottom: 6.75rem;
+  /* margin-bottom: 6.75rem; */
 }
 
 .AIguide__blockImgRobot2 {
@@ -405,6 +404,51 @@ nav {
   );
 }
 
-.products {
-  background-color: #191c26;
+.products__titleUnderImg {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 1.5rem;
+}
+
+.footer__blocktitle1 {
+  padding-bottom: 2.25rem;
+  border-bottom: 1px solid #585a60;
+}
+
+.footer__imgLogoTek4 {
+  width: 9.2rem;
+  height: 2rem;
+}
+
+.footer__TextUnderImgAndAboveIcon {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #868991;
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.footer__blockIcon {
+  height: 2rem;
+  margin-bottom: 3rem;
+}
+
+.footer__imgIcon {
+  width: 1.5rem;
+  margin-right: 1rem;
+}
+
+.footer__blocktitle1-title {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 1.6rem;
+  color: #fcfcfd;
+}
+
+.footer__blocktitle1-underTitle {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #868991;
+  margin-bottom: 0.75rem;
 }

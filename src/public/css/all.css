@@ -19,6 +19,10 @@ span {
   padding: 0 50px;
 }
 
+.displayNone {
+  display: none;
+}
+
 .displayGrid {
   display: grid;
 }
@@ -82,11 +86,22 @@ span {
   padding: 25px 50px;
 }
 
+.paddingTopBottom55px {
+  padding: 55px 0;
+}
+
 .paddingTopBottom90px {
   padding: 90px 0;
 }
 
+.paddingTopBottom2rem {
+  /* tương đương 32px */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .marginTop2rem {
+  /* tương đương 32px */
   margin-top: 2rem;
 }
 
@@ -128,6 +143,10 @@ span {
 
 .marginLeftRight50px {
   margin: 0 50px;
+}
+
+.background-colorHex111319 {
+  background-color: #111319;
 }
 
 .background-colorHexd54253 {
@@ -250,12 +269,24 @@ span {
   text-align: center;
 }
 
+.width237px {
+  width: 237px;
+}
+
+.width400px {
+  width: 400px;
+}
+
 .width520px {
   width: 520px;
 }
 
 .width460px {
   width: 460px;
+}
+
+.width715px {
+  width: 715px;
 }
 
 .width840px {
