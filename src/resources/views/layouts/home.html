@@ -47,18 +47,18 @@
             </div>
         </nav>
         <div class="row banner">
-            <img class="header__banner" src="../../../public/img/banner.png" alt="Banner">
+            <img class="header__ImgBanner" src="../../../public/img/banner.png" alt="Banner">
         </div>
     </header>
     <main>
         <section class="description">
             <div class="row displayFlex">
                 <div class="column margin-left60px paddingLeftRight35px positionRelative">
-                    <div class="description__description1 width460px">
+                    <div class="title marginTop90px width460px">
                         <span>Nơi tốt nhất để học tập, rèn luyện kỹ năng, tìm kiếm việc làm và chia sẻ tri thức</span>
                     </div>
 
-                    <button class="description__btnStartNow background-colorHexd54253">
+                    <button class="description__btnStartNow btn background-colorHexd54253">
                         <span>Bắt đầu ngay</span>
                     </button>
 
@@ -185,9 +185,10 @@
 
         <section class="courses">
             <div class="row center">
-                <div class="course__Title marginTopBottom5px">Phong cách học tập thực chiến</div>
-                <div class="course__Text marginTopBottom5px">Phương pháp học tốt nhất là thực hành.</div>
-                <div class="course__Text marginTopBottom5px">Hệ thống học tập bài bản theo lộ trình với hàng ngàn bài
+                <div class="title marginTopBottom5px">Phong cách học tập thực chiến</div>
+                <div class="descriptionUnderTitle marginTopBottom5px">Phương pháp học tốt nhất là thực hành.</div>
+                <div class="descriptionUnderTitle marginTopBottom5px">Hệ thống học tập bài bản theo lộ trình với
+                    hàng ngàn bài
                     tập thực hành. Học là
                     làm được. Hoàn toàn
                     miễn phí</div>
@@ -208,6 +209,11 @@
             </div>
 
             <div class="row displayFlex">
+                <div class="displayFlexCenter">
+                    <button class="course__btnNext">
+                        <img class="course__nextImg" src="../../../public/img/arrow-left-red.svg" alt="Arrow Left">
+                    </button>
+                </div>
                 <div class="column marginLeftRight0375rem">
                     <div class="blockCourse">
                         <div class="course__blockImage marginBottom16px">
@@ -235,7 +241,7 @@
                             <div>Độ khó: <span class="colorHexb8bcc6">Dễ</span></div>
                             <div class="colorHex1e90ff">Nghề nghiệp</div>
                             <div class="course__blockBtnStudyNow">
-                                <button class="course__studyNow background-colorHexd54253">
+                                <button class="course__studyNow btn background-colorHexd54253">
                                     <span>Học ngay</span>
                                 </button>
                             </div>
@@ -270,7 +276,7 @@
                             <div>Độ khó: <span class="colorHexb8bcc6">Dễ</span></div>
                             <div class="colorHex1e90ff">Nghề nghiệp</div>
                             <div class="course__blockBtnStudyNow">
-                                <button class="course__studyNow background-colorHexd54253">
+                                <button class="course__studyNow btn background-colorHexd54253">
                                     <span>Học ngay</span>
                                 </button>
                             </div>
@@ -304,41 +310,269 @@
                             <div>Độ khó: <span class="colorHexb8bcc6">Trung bình</span></div>
                             <div class="colorHex1e90ff">Nghề nghiệp</div>
                             <div class="course__blockBtnStudyNow">
-                                <button class="course__studyNow background-colorHexd54253">
+                                <button class="course__studyNow btn background-colorHexd54253">
                                     <span>Học ngay</span>
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- <button class="course__SeeAll">Xem tất cả</button> -->
+                <div class="displayFlexCenter">
+                    <button class="course__btnNext ">
+                        <img class="course__nextImg" src="../../../public/img/arrow-right-red.svg" alt="Arrow Right">
+                    </button>
+                </div>
+
+            </div>
+            <div class="row displayFlexCenter">
+                <button class="courseAndPractice__btnSeeAllAndBtnPracticeNow displayFlexCenter">
+                    <span class="colorHexd54253">Xem tất cả</span>
+                    <img class="courseAndPractice__nextImg" src="../../../public/img/arrow-right-red.svg"
+                        alt="Arrow Right">
+                </button>
             </div>
         </section>
 
-        <section class="practice">
+        <section class="practice ">
+            <div class="row center">
+                <div class="title marginTopBottom5px">Thực hành ngay khi học</div>
+                <div class="displayFlexCenter descriptionUnderTitle">
+                    <div class="marginTopBottom5px width840px font-size1125rem">Công nghệ học tập
+                        tương tác kết hợp
+                        với
+                        hệ thống
+                        chấm code tự động bằng AI giúp bạn nhận được những phản hồi nhanh nhất để điều chỉnh việc học
+                        tập
+                        của mình một cách hiệu quả.</div>
+                </div>
+            </div>
+
+            <div class="row marginTop2rem">
+                <div class="blockPaddingAndWidthHeight">
+                    <div class="practice__blockWriteCodeAndResult displayFlex">
+                        <div class="column practice__blockWriteCode">
+                            <div
+                                class="practice__blockFileAndChooseLaguage background-colorHex242836 displayFlexAlign-itemsCenterAndJustify-contentSpace-between">
+                                <div class="blockFileAndResult">main.py</div>
+                                <select class="chooseProgrammingLanguage " title="chooseProgrammingLanguage" name="">
+                                    <option value="">C</option>
+                                    <option value="">C++</option>
+                                    <option selected value="Python 3">Python 3</option>
+                                    <option value="">TypeScript</option>
+                                    <option value="">Go</option>
+                                </select>
+                            </div>
+                            <div class="displayFlex">
+                                <div class="paddingLeftRight20px">
+                                    <div>1</div>
+                                    <div>2</div>
+                                    <div>3</div>
+                                    <div>4</div>
+                                    <div>5</div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <span class="colorHexb294bb">print</span>
+                                        <span>(</span>
+                                        <span class="colorHexb5bd68">"TEK4.VN"</span>
+                                        <span>)</span>
+                                    </div>
+                                    <div><br></div>
+                                    <div>
+                                        <span class="colorHexb294bb">print</span>
+                                        <span>(</span>
+                                        <span class="colorHexb5bd68">"Xin chào các bạn"</span>
+                                        <span>)</span>
+                                    </div>
+                                    <div><br></div>
+                                    <div>
+                                        <span class="colorHexb294bb">print</span>
+                                        <span>(</span>
+                                        <span class="colorHexb5bd68">"Hãy tiếp tục học và luyện tập nhé"</span>
+                                        <span>)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br><br><br><br><br><br><br><br><br><br>
+                            <div class="practice__blockRotateAndRun displayFlex">
+                                <button class="practice__loadRotate" title="Load">
+                                    <span>
+                                        <i class="fa-solid fa-rotate-left"></i>
+                                    </span>
+                                </button>
+                                <button class="practice__Run">
+                                    <i class="fa-solid fa-play"></i>
+                                    <span class="colorHexd54253">Run</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="column practice__blockResult">
+                            <div class="background-colorHex242836 displayFlex">
+                                <div class="blockFileAndResult">Kết quả</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row displayFlexCenter">
+                <button class="courseAndPractice__btnSeeAllAndBtnPracticeNow displayFlexCenter">
+                    <span class="colorHexd54253">Trải nghiệm ngay</span>
+                    <img class="courseAndPractice__nextImg" src="../../../public/img/arrow-right-red.svg"
+                        alt="Arrow Right">
+                </button>
+            </div>
+        </section>
+
+        <section class="AIguide">
+            <div class="row displayFlex">
+                <div class="column AIguide__imgRobot1">
+                    <img src="../../../public/img/robot.webp" alt="Robot">
+                </div>
+                <div class="column">
+                    <div class="AIguide__description">
+                        <div class="colorHex8a96ff fontWeight600">Bạn chưa biết bắt đầu từ đâu?</div>
+                        <div class="title">Công nghệ AI sẽ giúp bạn lựa chọn lộ trình học
+                            tập bài bản</div>
+                        <div class="descriptionUnderTitle">Bạn chỉ cần trả lời một vài câu hỏi nhỏ, đơn giản hệ thống AI
+                            được xây dựng từ hàng triệu điểm
+                            dữ liệu của <span class="colorHexd54253">TEK4.VN</span> sẽ gợi ý và đưa ra những lời khuyên
+                            hữu
+                            ích cho bạn về lộ trình
+                            nghề nghiệp
+                            của mình.
+                        </div>
+                        <button class="AIguide__btnChooseAI btn background-colorHexd54253">
+                            <span>Chọn nghề cùng AI</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="column AIguide__blockImgRobot2">
+                    <img class="AIguide__blockImgRobot2-img" src="../../../public/img/robot2.webp" alt="Robot">
+                </div>
+            </div>
+        </section>
+
+        <section class="news center">
             <div class="row">
-
+                <div class="title">Cập nhật tin tức, học hỏi và chia sẻ kiến thức</div>
+                <div class="descriptionUnderTitle marginTopBottom3050px">"Tự tin cập nhật tin tức nóng hổi, trải nghiệm
+                    học tập đa dạng và
+                    giao lưu chia sẻ kiến thức với cộng đồng."</div>
+                <div class="displayFlex marginBottom30px">
+                    <a href="#">
+                        <div class="column news__blockContent displayFlexCenter">
+                            <div class="news__blockImg background-colorRgb30144255">
+                                <img src="../../../public/img/knowledge.svg" alt="Kiến thức">
+                            </div>
+                            <div class="news__titleAndPost">
+                                <div class="news__titleTopic">Kiến thức</div>
+                                <div class="descriptionUnderTitle">8 bài viết</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="paddingLeftRight20px">
+                        <div class="column news__blockContent displayFlexCenter">
+                            <div class="news__blockImg background-colorRgb2551650">
+                                <img src="../../../public/img/news.svg" alt="Tin tức">
+                            </div>
+                            <div class="news__titleAndPost">
+                                <div class="news__titleTopic">Tin tức</div>
+                                <div class="descriptionUnderTitle">999+ bài viết</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="column news__blockContent displayFlexCenter">
+                            <div class="news__blockImg background-colorRgb98112233">
+                                <img src="../../../public/img/review.svg" alt="Review">
+                            </div>
+                            <div class="news__titleAndPost">
+                                <div class="news__titleTopic">Review</div>
+                                <div class="descriptionUnderTitle">0 bài viết</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="displayFlex">
+                    <a href="#">
+                        <div class="column news__blockContent displayFlexCenter">
+                            <div class="news__blockImg background-colorRgb231670">
+                                <img src="../../../public/img/toplist.svg" alt="Toplist">
+                            </div>
+                            <div class="news__titleAndPost">
+                                <div class="news__titleTopic">Toplist</div>
+                                <div class="descriptionUnderTitle">80 bài viết</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="paddingLeftRight20px">
+                        <div class="column news__blockContent displayFlexCenter">
+                            <div class="news__blockImg background-colorRgb2555730 ">
+                                <img src="../../../public/img/howto.svg" alt="How - To">
+                            </div>
+                            <div class="news__titleAndPost">
+                                <div class="news__titleTopic">How - To</div>
+                                <div class="descriptionUnderTitle">4 bài viết</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="column news__blockContent displayFlexCenter">
+                            <div class="news__blockImg background-colorRgb3162184">
+                                <img src="../../../public/img/explore.svg" alt="Khám phá">
+                            </div>
+                            <div class="news__titleAndPost">
+                                <div class="news__titleTopic">Khám phá</div>
+                                <div class="descriptionUnderTitle">29 bài viết</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
 
-        <div class="row">
-            <section class="AIguide">
-
-            </section>
-        </div>
-        <div class="row">
-            <section class="news">
-
-            </section>
-        </div>
-        <div class="row">
-            <section class="technology-community">
-
-            </section>
-        </div>
+        <section class="technology-community">
+            <div class="row displayFlex">
+                <div class="column width520px marginRight230px paddingTopBottom90px">
+                    <div class="title marginBottom16px">Kết nối với <span class="colorHex8a96ff">cộng đồng công
+                            nghệ</span> để học hỏi và
+                        tìm kiếm cơ hội</div>
+                    <div class="descriptionUnderTitle">Với chức năng kết nối, bạn có thể liên kết với bạn bè, đồng
+                        nghiệp, những người cùng đam mê
+                        trong lĩnh vực Công nghệ để chia sẻ cũng như tìm kiếm những cơ hội nghề nghiệp mới, những mối
+                        quan hệ mới thú vị.</div>
+                </div>
+                <div class="column">
+                    <!-- <img src="../../../public/img/community-bg.svg" alt=""> -->
+                    <img src="../../../public/img/banner4.webp" alt="Coder">
+                </div>
+            </div>
+        </section>
     </main>
-    <aside class="products">
+    <aside class="products border center">
+        <div class="row">
+            <div class="title">Đồ dùng, phục kiện độc đáo cho dân công nghệ</div>
+            <div class="descriptionUnderTitle">Hoạt động tích cực để đổi lấy TPoint và voucher mua sắm những đồ dùng và
+                phụ kiện công nghệ độc đáo
+                mang đậm cá tính Techie</div>
+            <div>
+                <div class="column width460px">
+                    <div class="displayFlex">
+                        <img src="../../../public/img/robot1.webp" alt="Robot">
+                        <div class="displayGrid gridRows">
+                            <img class="" src="../../../public/img/robot2 (1).webp" alt="Robot">
+                            <img src="../../../public/img/robot3.webp" alt="Robot">
+                        </div>
+                    </div>
+                    <div>Robot</div>
+                </div>
 
+            </div>
+            <button class="AIguide__btnChooseAI btn background-colorHexd54253">
+                <span>Mua sắm ngay</span>
+            </button>
+        </div>
     </aside>
     <footer>
 

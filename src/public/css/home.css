@@ -41,7 +41,7 @@ nav {
   margin-right: 12px;
 }
 
-.header__banner {
+.header__ImgBanner {
   width: 100%;
   height: 8rem;
 }
@@ -50,13 +50,6 @@ nav {
   margin-top: 10px;
   background: url("../img/hero-bg.png");
   /* border: 1px solid yellow; */
-}
-
-.description__description1 {
-  margin-top: 90px;
-  font-size: 2rem;
-  font-weight: 700;
-  /* border: 1px solid blue; */
 }
 
 .description__btnStartNow {
@@ -185,18 +178,7 @@ nav {
 
 .courses {
   padding: 3.5rem 0;
-}
-
-.course__Title {
-  font-weight: 700;
-  font-size: 2rem;
-  color: #fafbfc;
-}
-
-.course__Text {
-  font-weight: 400;
-  font-size: 1rem;
-  color: #b8bcc6;
+  /* border: 1px solid yellow; */
 }
 
 .blockCourse {
@@ -235,10 +217,194 @@ nav {
 .course__blockBtnStudyNow {
   float: right;
 }
+
 .course__studyNow {
   padding: 0.8rem 1.25rem;
+  font-size: 14px;
+  font-weight: 500;
   border-radius: 5px;
   box-shadow: 0 4px 16px rgba(79, 9, 17, 0.24), inset 0 4px 4px #f36464;
   width: 6.4375rem;
   margin-bottom: 20px;
+}
+
+.course__btnNext {
+  height: 55px;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.702);
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.courseAndPractice__btnSeeAllAndBtnPracticeNow {
+  background-color: transparent;
+  border-radius: 5px;
+  height: 3.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 1rem;
+  border: 2px solid #1b1f27;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  margin: 30px 0 50px 0;
+}
+
+.practice {
+  background: linear-gradient(0.809turn, #111319 61.65%, #191c26 101.68%);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.blockPaddingAndWidthHeight {
+  /* width: 100%; */
+  width: 1340px;
+  height: 25.312rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.practice__blockWriteCodeAndResult {
+  width: 100%;
+  background-color: #111319 !important;
+  height: 100%;
+  border: 1px solid #3d4048;
+  border-radius: 4px;
+}
+
+.practice__blockWriteCode {
+  width: 50%;
+  border: 1px solid #3d4048;
+  border-right: 1.25rem solid #191c26;
+}
+
+.blockFileAndResult {
+  background-color: #111319;
+  border-radius: 0 14px 0 0;
+  margin-top: 0.25rem;
+  padding: 1rem 2rem;
+}
+
+.chooseProgrammingLanguage {
+  height: 40px;
+  padding: 0 11px;
+  background-image: linear-gradient(270deg, #111319 63.84%, #111319);
+  border-radius: 0.5rem;
+  color: #b8bcc6;
+  border: none;
+}
+
+.practice__blockResult {
+  width: 50%;
+}
+
+.practice__blockRotateAndRun {
+  float: right;
+}
+
+.practice__loadRotate,
+.practice__Run {
+  background-color: transparent;
+  border-radius: 5px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 1rem;
+  height: 2.1rem;
+}
+
+.practice__loadRotate {
+  border: 2px solid #fafbfc;
+  color: #fff;
+  box-shadow: none;
+}
+
+.practice__Run {
+  color: #d54253;
+  border: 1px solid #1b1f27;
+  margin: 0 25px 0 10px;
+}
+
+.AIguide__imgRobot1 {
+  padding-right: 37px;
+  padding-bottom: 65px;
+}
+
+.AIguide__description {
+  width: 720px;
+  margin-bottom: 3.5rem;
+  margin-left: 3.375rem;
+  padding-top: 4rem;
+}
+
+.AIguide__description div {
+  /* khoảng cách dưới của các chữ  */
+  margin-bottom: 18px;
+}
+
+.AIguide__btnChooseAI {
+  box-shadow: 0 4px 16px rgba(79, 9, 17, 0.24), inset 0 4px 4px #f36464;
+  height: 3.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  margin-bottom: 6.75rem;
+}
+
+.AIguide__blockImgRobot2 {
+  width: 100%;
+  position: relative;
+}
+
+.AIguide__blockImgRobot2-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 3.375rem;
+}
+
+.news {
+  background-image: linear-gradient(
+    0.809turn,
+    #191c26 0.54%,
+    #111319 61.65%,
+    #191c26 101.68%
+  );
+  padding: 3.5rem 0;
+}
+
+.news__blockContent {
+  border-radius: 0.5rem;
+  background-color: #191c26;
+  padding: 1rem 0 1rem 2rem;
+}
+
+.news__blockImg {
+  border-radius: 0.5rem;
+  padding: 1.625rem 1.8125rem;
+  margin-left: 25px;
+}
+
+.news__titleTopic {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.news__titleAndPost {
+  margin-right: 25px;
+  width: 288px;
+}
+
+.technology-community {
+  padding: 1.75rem 0;
+  background-image: linear-gradient(
+    0.809turn,
+    #191c26 0.54%,
+    #111319 61.65%,
+    #191c26 101.68%
+  );
+}
+
+.products {
+  background-color: #191c26;
 }
