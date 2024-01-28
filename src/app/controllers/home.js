@@ -5,6 +5,6 @@ function clicked() {
   search.classList.remove("displayNone");
 }
 
-function Dong() {
+function exit() {
   search.classList.add("displayNone");
 }
