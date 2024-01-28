@@ -181,6 +181,10 @@ span {
   background-color: rgb(3, 162, 184);
 }
 
+.colorHex868991 {
+  color: #868991;
+}
+
 .colorHexb5bd68 {
   color: #b5bd68;
 }
@@ -267,6 +271,10 @@ span {
 
 .center {
   text-align: center;
+}
+
+.height4rem {
+  height: 4rem;
 }
 
 .width237px {

@@ -22,10 +22,11 @@
                     <a href="" class="header__logoTek4">
                         <img src="../../../public/img/logo.webp" alt="Logo Tek4">
                     </a>
-                    <div class="header__blockSearch FlexAlign-itemsCenter">
+                    <div class="header__blockSearch FlexAlign-itemsCenter" onclick="clicked()">
                         <img class="header__blockSearch-logoSearch" src="../../../public/img/search-default-icon.svg"
                             alt="Search">
-                        <input class="header__blockSearch-inputSearch" disabled placeholder="Tìm kiếm trên TEK4.VN">
+                        <input class="header__blockSearch-inputSearch" onclick="clicked()" readonly
+                            placeholder="Tìm kiếm trên TEK4.VN">
                     </div>
                 </div>
                 <div class="column column-2 FlexAlign-itemsCenter">
@@ -43,6 +44,31 @@
                     <a href="#" class="header__loginAndRegister">
                         <span>Đăng nhập/Đăng ký</span>
                     </a>
+                </div>
+            </div>
+            <div id="Search" class="displayNone">
+                <div class="search">
+                    <img class="search__imgClose" onclick="Dong()" src="../../../public/img/close-icon.svg" alt="Close">
+                    <div class="search__blockFrame">
+                        <form>
+                            <div class="search__blockSearch">
+                                <div class="search__blockSearch-sub">
+                                    <span class="search__iconSearch">
+                                        <img src="../../../public/img/search-default-icon.svg" alt="tek4 icon">
+                                    </span>
+                                    <input class="search__input" placeholder="Bạn đang tìm kiếm điều gì?" id="search"
+                                        type="text" value="">
+                                </div>
+                            </div>
+                            <div class="search__filter">Lọc theo:</div>
+                            <div class="search__blockCheckboxAndText colorHex868991">
+                                <input class="search__checkbox" type="checkbox" name="khoahoc" id="khoahoc">
+                                <label class="search__textNearCheckbox" for="khoahoc">Khóa học</label>
+                                <input class="search__checkbox" type="checkbox" name="baiviet" id="baiviet">
+                                <label class="search__textNearCheckbox" for="baiviet">Bài viết</label>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -241,7 +267,7 @@
                             <div>Độ khó: <span class="colorHexb8bcc6">Dễ</span></div>
                             <div class="colorHex1e90ff">Nghề nghiệp</div>
                             <div class="course__blockBtnStudyNow">
-                                <button class="course__studyNow btn background-colorHexd54253">
+                                <button class="course__btnStudyNow btn background-colorHexd54253">
                                     <span>Học ngay</span>
                                 </button>
                             </div>
@@ -276,7 +302,7 @@
                             <div>Độ khó: <span class="colorHexb8bcc6">Dễ</span></div>
                             <div class="colorHex1e90ff">Nghề nghiệp</div>
                             <div class="course__blockBtnStudyNow">
-                                <button class="course__studyNow btn background-colorHexd54253">
+                                <button class="course__btnStudyNow btn background-colorHexd54253">
                                     <span>Học ngay</span>
                                 </button>
                             </div>
@@ -310,7 +336,7 @@
                             <div>Độ khó: <span class="colorHexb8bcc6">Trung bình</span></div>
                             <div class="colorHex1e90ff">Nghề nghiệp</div>
                             <div class="course__blockBtnStudyNow">
-                                <button class="course__studyNow btn background-colorHexd54253">
+                                <button class="course__btnStudyNow btn background-colorHexd54253">
                                     <span>Học ngay</span>
                                 </button>
                             </div>
@@ -324,7 +350,7 @@
                 </div>
             </div>
             <div class="row displayFlexCenter">
-                <button class="courseAndPractice__btnSeeAllAndBtnPracticeNow displayFlexCenter">
+                <button class="course__btnSeeAll displayFlexCenter">
                     <span class="colorHexd54253">Xem tất cả</span>
                     <img class="courseAndPractice__nextImg" src="../../../public/img/arrow-right-red.svg"
                         alt="Arrow Right">
@@ -415,7 +441,7 @@
             </div>
 
             <div class="row displayFlexCenter">
-                <button class="courseAndPractice__btnSeeAllAndBtnPracticeNow displayFlexCenter">
+                <button class="practice__btnPracticeNow displayFlexCenter">
                     <span class="colorHexd54253">Trải nghiệm ngay</span>
                     <img class="courseAndPractice__nextImg" src="../../../public/img/arrow-right-red.svg"
                         alt="Arrow Right">
@@ -646,31 +672,33 @@
                     <div class="footer__blocktitle1-underTitle">Hỏi đáp</div>
                 </div>
             </div>
-            <div class="displayFlex">
+            <div class="displayFlex footer__blocktitle2">
                 <div class="column width715px">
-                    <div>CÔNG TY CỔ PHẦN CÔNG NGHỆ GIÁO DỤC VÀ DỊCH VỤ BRONTOBYTE</div>
-                    <div>
-                        <span>Icon</span>
-                        The Manor Central Park, đường Nguyễn Xiển, phường Đại Kim, quận Hoàng Mai, TP. Hà Nội
+                    <div class="footer__CompanyName">CÔNG TY CỔ PHẦN CÔNG NGHỆ GIÁO DỤC VÀ DỊCH VỤ BRONTOBYTE
+                    </div>
+                    <div class="footer__CompanyAddress displayFlex">
+                        <div><img src="../../../public/img/icon-location.svg" alt="Địa chỉ"></div>
+                        <div>The Manor Central Park, đường Nguyễn Xiển, phường Đại Kim, quận Hoàng Mai, TP. Hà Nội</div>
                     </div>
                 </div>
                 <div class="column width237px">
-                    <div>THÔNG TIN LIÊN HỆ</div>
+                    <div class="footer__ContactInfor">THÔNG TIN LIÊN HỆ</div>
                     <div>
-                        <span>Icon</span>
-                        tek4.vn@gmail.com
+                        <span class="footer__IconEmail"><i class="fa-solid fa-envelope"></i></span>
+                        <span>tek4.vn@gmail.com</span>
                     </div>
                 </div>
                 <div class="column">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <img class="footer__ImgDMCA" src="../../../public/img/dmca_protected_1_120.png" alt="">
+                    <img class="footer__ImgRegister" src="../../../public/img/dk.png" alt="">
                 </div>
             </div>
-            <div class="">
-                <div>©2024 TEK4.VN</div>
+            <div class="height4rem">
+                <div class="footer__TextSourse">©2024 TEK4.VN</div>
             </div>
         </div>
     </footer>
+    <script src="../../../app/controllers/home.js"></script>
 </body>
 
 </html>

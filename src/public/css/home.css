@@ -218,7 +218,7 @@ nav {
   float: right;
 }
 
-.course__studyNow {
+.course__btnStudyNow {
   padding: 0.8rem 1.25rem;
   font-size: 14px;
   font-weight: 500;
@@ -236,7 +236,8 @@ nav {
   border-radius: 0.5rem;
 }
 
-.courseAndPractice__btnSeeAllAndBtnPracticeNow {
+.course__btnSeeAll,
+.practice__btnPracticeNow {
   background-color: transparent;
   border-radius: 5px;
   height: 3.5rem;
@@ -407,7 +408,6 @@ nav {
 .products__titleUnderImg {
   font-size: 1.15rem;
   font-weight: 700;
-  color: #fff;
   margin-top: 1.5rem;
 }
 
@@ -421,10 +421,14 @@ nav {
   height: 2rem;
 }
 
-.footer__TextUnderImgAndAboveIcon {
+.footer__TextUnderImgAndAboveIcon,
+.footer__blocktitle1-underTitle {
   font-size: 0.875rem;
   font-weight: 400;
   color: #868991;
+}
+
+.footer__TextUnderImgAndAboveIcon {
   margin-top: 1.25rem;
   margin-bottom: 1rem;
 }
@@ -443,12 +447,136 @@ nav {
   font-weight: 700;
   font-size: 1rem;
   margin-bottom: 1.6rem;
-  color: #fcfcfd;
 }
 
 .footer__blocktitle1-underTitle {
+  margin-bottom: 0.75rem;
+}
+
+.footer__blocktitle2 {
+  padding: 3rem 0;
+  border-bottom: 1px solid #585a60;
+}
+
+.footer__CompanyName,
+.footer__CompanyAddress,
+.footer__ContactInfor {
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+
+.footer__CompanyName {
+  font-size: 1.25rem;
+  width: 80%;
+}
+
+.footer__CompanyAddress {
   font-size: 0.875rem;
   font-weight: 400;
+  width: 77%;
+}
+
+.footer__ContactInfor {
+  font-size: 1rem;
+}
+
+.footer__IconEmail {
   color: #868991;
-  margin-bottom: 0.75rem;
+  margin-right: 1rem;
+}
+
+.footer__ImgRegister {
+  width: 6.375rem;
+  height: 2.375rem;
+}
+
+.footer__ImgDMCA {
+  width: 7.9375rem;
+  height: 2.75rem;
+  /* giữa nguyên tỉ lệ khung hình để ảnh không bị méo */
+  object-fit: contain;
+}
+
+.footer__TextSourse {
+  padding: 1.25rem 0 0;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+.search {
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 999;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #111319;
+  border: 1px solid #6288ac;
+  width: 75%;
+  box-shadow: 0 16px 32px rgba(27, 31, 39, 0.56);
+}
+
+.search__imgClose {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.2rem;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.search__blockFrame {
+  width: 70%;
+}
+
+.search__blockSearch {
+  background-color: #b8bcc6;
+  border: none;
+  box-shadow: none;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+}
+
+.search__blockSearch-sub {
+  width: 97%;
+  height: 80%;
+  padding: 6.5px 11px;
+  display: inline-flex;
+  font-size: 16px;
+}
+
+.search__iconSearch {
+  margin-right: 4px;
+  display: flex;
+  flex: none;
+  align-items: center;
+}
+
+.search__input {
+  background-color: #b8bcc6;
+  color: #1b1f27;
+  padding: 0;
+  border: none;
+  font-size: 1rem;
+}
+
+.search__filter,
+.search__textNearCheckbox {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.search__filter {
+  margin-bottom: 1em;
+  margin-top: 24px;
+}
+
+.search__textNearCheckbox {
+  padding-right: 8px;
+  /* padding-left: 8px; */
 }
