@@ -22,25 +22,29 @@
                     <a href="" class="header__logoTek4">
                         <img src="../../../public/img/logo.webp" alt="Logo Tek4">
                     </a>
-                    <div class="header__blockSearch FlexAlign-itemsCenter" onclick="clicked()">
-                        <img class="header__blockSearch-logoSearch" src="../../../public/img/search-default-icon.svg"
-                            alt="Search">
-                        <input class="header__blockSearch-inputSearch" onclick="clicked()" readonly
+                    <div class="header__blockSearch FlexAlign-itemsCenter" id="header__blockSearch">
+                        <img class="header__blockSearch-logoSearch" id="header__blockSearch-logoSearch"
+                            src="../../../public/img/search-default-icon.svg" alt="Search">
+                        <input class="header__blockSearch-inputSearch" id="header__blockSearch-inputSearch" readonly
                             placeholder="Tìm kiếm trên TEK4.VN">
                     </div>
                 </div>
                 <div class="column column-2 FlexAlign-itemsCenter">
                     <a href="#" class="header__coursesAndNews">
-                        <img class="logoImage" src="../../../public/img/course.svg" alt="Course">
+                        <img class="logoImage" id="header__logoCourse" src="../../../public/img/course.svg"
+                            alt="Course">
+                        <div class="header__textStudy displayNone" id="header__textStudy">Học tập</div>
                     </a>
                     <a href="#" class="header__coursesAndNews">
-                        <img class="logoImage" src="../../../public/img/news2.svg" alt="News">
+                        <img class="logoImage" id="header__logoNews" src="../../../public/img/news2.svg" alt="News">
+                        <div class="header__textNews displayNone" id="header__textNews">Tin tức</div>
                     </a>
                 </div>
                 <div class="column column-3 FlexAlign-itemsCenter">
-                    <a href="#">
-                        <img class="logoImage" src="../../../public/img/menu.svg" alt="Menu">
+                    <a href="#" class="header__blockMenu" id="header__blockMenu">
+                        <img class="logoImage" id="header__iconMenu" src="../../../public/img/menu.svg" alt="Menu">
                     </a>
+                    <div class="header__textMenu displayNone" id="header__textMenu">Menu</div>
                     <a href="#" class="header__loginAndRegister">
                         <span>Đăng nhập/Đăng ký</span>
                     </a>
@@ -48,7 +52,8 @@
             </div>
             <div id="Search" class="displayNone">
                 <div class="search">
-                    <img class="search__imgClose" onclick="exit()" src="../../../public/img/close-icon.svg" alt="Close">
+                    <img class="search__imgClose" id="search__imgClose" src="../../../public/img/close-icon.svg"
+                        alt="Close">
                     <div class="search__blockFrame">
                         <form>
                             <div class="search__blockSearch">
@@ -352,8 +357,7 @@
             <div class="row displayFlexCenter">
                 <button class="course__btnSeeAll displayFlexCenter">
                     <span class="colorHexd54253">Xem tất cả</span>
-                    <img class="courseAndPractice__nextImg" src="../../../public/img/arrow-right-red.svg"
-                        alt="Arrow Right">
+                    <img src="../../../public/img/arrow-right-red.svg" alt="Arrow Right">
                 </button>
             </div>
         </section>
@@ -443,8 +447,7 @@
             <div class="row displayFlexCenter">
                 <button class="practice__btnPracticeNow displayFlexCenter">
                     <span class="colorHexd54253">Trải nghiệm ngay</span>
-                    <img class="courseAndPractice__nextImg" src="../../../public/img/arrow-right-red.svg"
-                        alt="Arrow Right">
+                    <img src="../../../public/img/arrow-right-red.svg" alt="Arrow Right">
                 </button>
             </div>
         </section>
@@ -584,12 +587,12 @@
             <div
                 class="products__rowProducts paddingTopBottom55px displayFlexAlign-itemsCenterAndJustify-contentSpace-between">
                 <div class="displayFlexCenter">
-                    <button class="course__btnNext">
-                        <img class="course__nextImg" src="../../../public/img/arrow-left-red.svg" alt="Arrow Left">
+                    <button class="products__btnNext" id="products__btnNextLeft">
+                        <img class="products__nextImg" src="../../../public/img/arrow-left-red.svg" alt="Arrow Left">
                     </button>
                 </div>
 
-                <div class="column width400px">
+                <div class="column width400px" id="products__food">
                     <div class="displayFlex">
                         <img src="../../../public/img/food1.webp" alt="Food">
                         <div class="displayGrid gridRows">
@@ -600,7 +603,7 @@
                     <div class="products__titleUnderImg">Thực phẩm</div>
                 </div>
 
-                <div class="column width400px">
+                <div class="column width400px" id="products__robot">
                     <div class="displayFlex">
                         <img src="../../../public/img/robot1.webp" alt="Robot">
                         <div class="displayGrid gridRows">
@@ -611,7 +614,7 @@
                     <div class="products__titleUnderImg">Robot</div>
                 </div>
 
-                <div class="column width400px">
+                <div class="column width400px" id="products__clothes">
                     <div class="displayFlex">
                         <img src="../../../public/img/clothes1.webp" alt="Clothe">
                         <div class="displayGrid gridRows">
@@ -622,9 +625,53 @@
                     <div class="products__titleUnderImg">Quần áo</div>
                 </div>
 
+                <div class="column width400px displayNone" id="products__mouse">
+                    <div class="displayFlex">
+                        <img src="../../../public/img/accessory1.webp" alt="Mouse">
+                        <div class="displayGrid gridRows">
+                            <img class="" src="../../../public/img/accessory2.webp" alt="Mouse">
+                            <img src="../../../public/img/accessory3.webp" alt="Mouse">
+                        </div>
+                    </div>
+                    <div class="products__titleUnderImg">Phụ kiện</div>
+                </div>
+
+                <div class="column width400px displayNone" id="products__laptop">
+                    <div class="displayFlex">
+                        <img src="../../../public/img/laptop1.webp" alt="Laptop">
+                        <div class="displayGrid gridRows">
+                            <img class="" src="../../../public/img/laptop2.webp" alt="Laptop">
+                            <img src="../../../public/img/laptop3.webp" alt="Laptop">
+                        </div>
+                    </div>
+                    <div class="products__titleUnderImg">Laptop</div>
+                </div>
+
+                <div class="column width400px displayNone" id="products__phone">
+                    <div class="displayFlex">
+                        <img src="../../../public/img/phone1.webp" alt="Phone">
+                        <div class="displayGrid gridRows">
+                            <img class="" src="../../../public/img/phone2.webp" alt="Phone">
+                            <img src="../../../public/img/phone3.webp" alt="Phone">
+                        </div>
+                    </div>
+                    <div class="products__titleUnderImg">Điện thoại</div>
+                </div>
+
+                <div class="column width400px displayNone" id="products__book">
+                    <div class="displayFlex">
+                        <img id="myImage" src="../../../public/img/book1.webp" alt="Book">
+                        <div class="displayGrid gridRows">
+                            <img class="" src="../../../public/img/book2.webp" alt="Book">
+                            <img src="../../../public/img/book3.webp" alt="Book">
+                        </div>
+                    </div>
+                    <div class="products__titleUnderImg">Sách</div>
+                </div>
+
                 <div class="displayFlexCenter">
-                    <button class="course__btnNext ">
-                        <img class="course__nextImg" src="../../../public/img/arrow-right-red.svg" alt="Arrow Right">
+                    <button class="products__btnNext" id="products__btnNextRight">
+                        <img class="products__nextImg" src="../../../public/img/arrow-right-red.svg" alt="Arrow Right">
                     </button>
                 </div>
             </div>
