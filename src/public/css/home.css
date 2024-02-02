@@ -167,6 +167,19 @@ nav {
   right: 0;
   bottom: 0;
   background-color: rgb(0, 0, 0, 0.3);
+  display: none;
+  /* áp dụng hiệu ứng với tên là faceIn */
+  animation: faceIn linear 0.3s;
+}
+
+/* animation */
+@keyframes faceIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .header__blockNavSlip {
@@ -177,6 +190,19 @@ nav {
   border: 2px solid #3d4048;
   border-radius: 10px;
   padding: 33px;
+  /* vẫn ở trên màn hình nhưng núp ở bên phải cùng */
+  transform: translateX(100%);
+  /* hỗ trợ hiệu ứng cho transform */
+  transition: transform linear 0.3s;
+}
+
+/* ~ được gọi là bộ chọn anh chị em sau với điều kiện thẻ .header__overlay phải ở sau thẻ #header__imputNavSlip*/
+#header__imputNavSlip:checked ~ .header__overlay {
+  display: block;
+}
+
+#header__imputNavSlip:checked ~ .header__blockNavSlip {
+  transform: translateX(0%);
 }
 
 .header__subBlockNavSlip {
@@ -205,6 +231,34 @@ nav {
   font-weight: 700;
   color: #e1e4eb;
   margin-bottom: 2rem;
+}
+
+.header__NavSlip-blockIcon {
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  background-image: linear-gradient(#b64040, #ffa4a4);
+}
+
+.header__NavSlip-blockIcon img {
+  width: 1rem;
+  height: 1rem;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(13%)
+    hue-rotate(237deg) brightness(104%) contrast(104%);
+}
+
+.header__NavSlipTitleTopic {
+  margin-bottom: 8px;
+}
+
+.header__NavSlipUnderTitleTopic {
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #868991;
 }
 
 .header__loginAndRegister {

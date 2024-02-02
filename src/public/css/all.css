@@ -141,6 +141,18 @@ a {
   margin: 0 50px;
 }
 
+.overflowHidden {
+  overflow: hidden;
+}
+
+.overflowAuto {
+  overflow: auto;
+}
+
+.overflowScoll {
+  overflow: scroll;
+}
+
 .background-colorHex191c26 {
   background-color: #191c26;
 }
@@ -285,12 +297,16 @@ a {
   width: 400px;
 }
 
-.width520px {
-  width: 520px;
-}
-
 .width460px {
   width: 460px;
+}
+
+.width475px {
+  width: 475px;
+}
+
+.width520px {
+  width: 520px;
 }
 
 .width715px {
