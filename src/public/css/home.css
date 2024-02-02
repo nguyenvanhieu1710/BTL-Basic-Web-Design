@@ -1,6 +1,12 @@
-/* header */
+/* Part header */
+
 nav {
-  margin: 20px 0;
+  position: fixed;
+  /* top: 0; */
+  width: 100%;
+  padding: 20px 0;
+  background-color: #191c26;
+  z-index: 998;
   /* border: 1px solid yellow; */
 }
 
@@ -8,7 +14,8 @@ nav {
   margin-right: 30px;
 }
 
-.header__blockSearch {
+.header__blockSearch,
+.header__blockSearchNavSlip {
   border-radius: 5px;
   background-color: rgb(27, 31, 39);
   height: 35px;
@@ -30,6 +37,7 @@ nav {
   position: absolute;
   top: 5rem;
   left: 50%;
+  /* cố định phần tử */
   transform: translate(-50%);
   z-index: 999;
   padding: 2rem 1rem;
@@ -49,6 +57,7 @@ nav {
   right: 0.2rem;
   width: 3rem;
   height: 3rem;
+  /* thay đổi hình dạng trỏ chuột */
   cursor: pointer;
 }
 
@@ -151,12 +160,60 @@ nav {
   right: 220px;
 }
 
+.header__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(0, 0, 0, 0.3);
+}
+
+.header__blockNavSlip {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 84px;
+  border: 2px solid #3d4048;
+  border-radius: 10px;
+  padding: 33px;
+}
+
+.header__subBlockNavSlip {
+  padding: 24px;
+}
+
+.header__blockSearchNavSlip,
+.header__blockNavSlipStudyAndNews {
+  border: 1px solid #3d4048;
+  border-radius: 0.5rem;
+  background-color: #111319;
+}
+
+.header__blockSearchNavSlip:hover {
+  border-color: #40a9ff;
+}
+
+.header__blockNavSlipStudyAndNews {
+  margin-top: 1.25rem;
+  padding: 1rem 1.25rem;
+}
+
+.header__NavSlip-TextStudy,
+.header__NavSlip-TextNews {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #e1e4eb;
+  margin-bottom: 2rem;
+}
+
 .header__loginAndRegister {
   margin-left: 30px;
   margin-right: 12px;
 }
 
 .header__ImgBanner {
+  margin-top: 85px;
   width: 100%;
   height: 8rem;
 }
@@ -532,7 +589,8 @@ nav {
   margin-left: 25px;
 }
 
-.news__titleTopic {
+.news__titleTopic,
+.header__blockNavSlip-TextMenu {
   font-weight: 700;
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
