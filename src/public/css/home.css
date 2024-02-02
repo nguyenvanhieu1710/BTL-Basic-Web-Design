@@ -192,8 +192,9 @@ nav {
   padding: 33px;
   /* vẫn ở trên màn hình nhưng núp ở bên phải cùng */
   transform: translateX(100%);
-  /* hỗ trợ hiệu ứng cho transform */
-  transition: transform linear 0.3s;
+  opacity: 0;
+  /* hỗ trợ hiệu ứng cho transform và opacity*/
+  transition: transform linear 0.3s, opacity linear 0.3s;
 }
 
 /* ~ được gọi là bộ chọn anh chị em sau với điều kiện thẻ .header__overlay phải ở sau thẻ #header__imputNavSlip*/
@@ -203,6 +204,7 @@ nav {
 
 #header__imputNavSlip:checked ~ .header__blockNavSlip {
   transform: translateX(0%);
+  opacity: 1;
 }
 
 .header__subBlockNavSlip {
