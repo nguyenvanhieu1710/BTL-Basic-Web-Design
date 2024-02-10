@@ -514,7 +514,7 @@ nav {
   background: linear-gradient(0.809turn, #111319 61.65%, #191c26 101.68%);
 }
 
-.blockPaddingAndWidthHeight {
+.practice__blockWriteCodeAndResultFather {
   /* width: 100%; */
   width: 1340px;
   height: 25.312rem;
@@ -764,4 +764,85 @@ nav {
   font-family: Poppins, sans-serif;
   font-weight: 400;
   font-size: 0.75rem;
+}
+
+/* Part responsive */
+/* 4K - 2560px -> ...*/
+@media (min-width: 2560px) {
+  nav {
+    /* display: none; */
+    width: 50%;
+    padding-right: 25%;
+    padding-left: 25%;
+  }
+
+  .header__ImgBanner {
+    width: 50%;
+    padding-right: 25%;
+    padding-left: 25%;
+  }
+
+  .description {
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+  }
+
+  .description__Cplusplus {
+    width: 38%;
+  }
+
+  .course__blockCoursesAndButton {
+    display: flex;
+    justify-content: center;
+  }
+
+  .practice__blockWriteCodeAndResultGrandfather {
+    display: flex;
+    justify-content: center;
+  }
+
+  .AIguide {
+    display: flex;
+    justify-content: center;
+  }
+
+  .news {
+    display: flex;
+    justify-content: center;
+  }
+
+  .technology-community {
+    display: flex;
+    justify-content: center;
+  }
+
+  .products__blockProducts {
+    display: flex;
+    justify-content: center;
+  }
+
+  .products__blockProducts .column {
+    margin: 0 10px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Laptop L - 1440px -> 4K - 2560px*/
+@media (max-width: 2560px) and (min-width: 1440px) {
+  nav {
+    display: none;
+  }
+}
+
+/* Laptop - 1024px -> Tablet - 768px */
+@media (max-width: 1024px) and (min-width: 768px) {
+  nav {
+    /* display: none; */
+    width: 68%;
+  }
 }
