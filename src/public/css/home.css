@@ -767,29 +767,12 @@ nav {
 }
 
 /* Part responsive */
-/* 4K - 2560px -> ...*/
-@media (min-width: 2560px) {
-  nav {
-    /* display: none; */
-    width: 50%;
-    padding-right: 25%;
-    padding-left: 25%;
-  }
-
-  .header__ImgBanner {
-    width: 50%;
-    padding-right: 25%;
-    padding-left: 25%;
-  }
-
+/* ... -> Laptop L - 1440px*/
+@media (min-width: 1440px) {
   .description {
     background-size: cover;
     display: flex;
     justify-content: center;
-  }
-
-  .description__Cplusplus {
-    width: 38%;
   }
 
   .course__blockCoursesAndButton {
@@ -832,17 +815,66 @@ nav {
   }
 }
 
-/* Laptop L - 1440px -> 4K - 2560px*/
-@media (max-width: 2560px) and (min-width: 1440px) {
+/* ... -> 4K - 2560px*/
+@media (min-width: 2560px) {
   nav {
-    display: none;
+    /* display: none; */
+    width: 50%;
+    padding-right: 25%;
+    padding-left: 25%;
+  }
+
+  .header__ImgBanner {
+    width: 50%;
+    padding-right: 25%;
+    padding-left: 25%;
+  }
+
+  .description__Cplusplus {
+    width: 38%;
   }
 }
 
-/* Laptop - 1024px -> Tablet - 768px */
-@media (max-width: 1024px) and (min-width: 768px) {
+/* 4K - 2560px -> Laptop L - 1440px*/
+@media (max-width: 2560px) and (min-width: 1440px) {
+  .course__blockCoursesAndButton {
+    padding: 0;
+  }
+
+  .marginLeftRight0375rem {
+    margin: 0;
+  }
+
+  .practice__blockWriteCodeAndResultFather {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .news__overview {
+    padding: 0;
+  }
+}
+
+/* Laptop L - 1440px -> Laptop - 1024px */
+@media (max-width: 1439px) and (min-width: 1024px) {
   nav {
     /* display: none; */
-    width: 68%;
+    width: 80%;
+  }
+
+  .header__ImgBanner {
+    /* width: 150%; */
+  }
+
+  .course__blockCoursesAndButton {
+    padding: 0;
+  }
+}
+/* Laptop - 1024px -> Tablet - 768px */
+@media (max-width: 1023px) and (min-width: 768px) {
+  nav {
+    display: none;
+    /* width: 68%; */
   }
 }
