@@ -860,15 +860,56 @@ nav {
 @media (max-width: 1439px) and (min-width: 1024px) {
   nav {
     /* display: none; */
-    width: 80%;
+    width: 69%;
   }
 
-  .header__ImgBanner {
-    /* width: 150%; */
+  .margin-left60px {
+    margin-left: 0;
+  }
+
+  .description__mainTitle,
+  .description__iconAndDescription {
+    width: 315px;
+    /* margin-top: 90px; */
+  }
+
+  .description__programmingLanguage {
+    padding: 0;
+  }
+
+  .description__backgroundImg {
+    width: 200px;
+    /* height: 48.4375rem; */
+    right: 0;
+    margin-left: 0px;
+    height: 640px;
   }
 
   .course__blockCoursesAndButton {
     padding: 0;
+  }
+
+  .course__btnNextLeft {
+    position: absolute;
+    left: 0;
+    z-index: 10;
+  }
+
+  .course__btnNextRight {
+    position: absolute;
+    right: 0;
+  }
+
+  .course__cloumn1 {
+    transform: translate(-30%);
+  }
+
+  .course__cloumn2 {
+    transform: translate(-32%);
+  }
+
+  .course__cloumn3 {
+    transform: translate(-32%);
   }
 }
 /* Laptop - 1024px -> Tablet - 768px */
