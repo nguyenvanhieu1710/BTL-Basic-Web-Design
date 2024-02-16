@@ -22,9 +22,7 @@
   line-height: 20px;
   margin-top: 0.75rem;
   text-align: center;
-  text-transform: uppercase;
   margin-bottom: 10px;
-  font-family: inherit;
   font-weight: 500;
 }
 
@@ -36,33 +34,29 @@
 .input-box {
   align-items: center;
   background: #000;
-  border: 2px solid;
-  border-image-source: none !important;
-  border-radius: 4px;
+  border: 2px solid #3d4048;
   border-radius: 0.5rem;
   display: flex;
   height: 3.5rem;
   line-height: 3rem;
-  margin-top: 1.5rem;
-  margin: 1.5rem 0 0 !important;
-  max-width: 100%;
-  max-width: 22.25rem;
-  min-width: 22.25rem;
+  margin: 1.5rem 0 0;
   overflow: hidden;
   padding-left: 0.5rem;
 }
 
-.input-box input {
-  background: transparent;
-  border: none;
-  color: #fff !important;
-  flex-grow: 1;
-  font-size: 1rem;
-  outline: none;
-  padding: 0.5rem;
+.input-boxClick {
+  border: 2px solid #fff;
 }
 
-.form-control {
+.inputEmail,
+.inputPassword {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  /* outline là đường viền */
+  outline: none;
+  padding: 0.5rem;
   display: block;
   width: 100%;
   height: 26px;
@@ -70,4 +64,80 @@
   border-radius: 1px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  font-style: italic;
+}
+
+.forgetPassword {
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.btnLogin {
+  background: linear-gradient(
+    180deg,
+    #d54253 59.37%,
+    #d84959 82.81%,
+    rgba(230, 115, 128, 0.94)
+  );
+  border: 1px solid rgba(224, 78, 94, 0.949);
+  border-radius: 0.5rem;
+  box-shadow: 0 394px 287px rgba(8, 10, 29, 0.95),
+    0 2px 11px rgba(34, 61, 102, 0.282), 0 8px 15px 1px rgba(7, 10, 30, 0.182);
+  color: #f4f4f4;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 700;
+  height: 3.5rem;
+  margin: 2rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orLoginBy:before,
+.orLoginBy::after {
+  background-color: #3d4048;
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+}
+
+.orLoginBy:before {
+  margin-right: 10px;
+}
+
+.orLoginBy::after {
+  margin-left: 10px;
+}
+
+.anotherLogin {
+  border: 1px solid #3d4048;
+  border-radius: 0.5rem;
+  display: flex;
+  margin-top: 2rem;
+  padding-left: 0;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #3d4048;
+  cursor: pointer;
+  height: 4rem;
+  width: 20%;
+}
+
+.link:last-child {
+  border-right: none;
+}
+
+.footer {
+  color: #868991;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-top: 4rem;
+  text-align: center;
 }

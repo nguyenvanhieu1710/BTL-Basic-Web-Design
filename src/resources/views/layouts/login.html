@@ -12,29 +12,57 @@
 
 <body>
     <div class="frame">
-        <h1 class="title">Đăng nhập <span class="colorHexd54253">TEK4.VN</span></h1>
-        <h3 class="description">HỌC TẬP - LUYỆN TẬP - CHIA SẺ - KẾT NỐI - MỞ RA CƠ HỘI NGHỀ NGHIỆP VÀ HƠN THẾ NỮA</h3>
-        <div class="email input-box">
-            <img src="../../../public/img/userPrefix.e910c8576dc7245f624fe9f316667ee2.svg" alt="User">
-            <input class="form-control" type="text" aria-label="ok" placeholder="Nhập email">
-        </div>
-        <div class="password input-box">
-            <img src="../../../public/img/passwordPrefix.668c7912ab988a9f1e1adb4484a1b783.svg" alt="Password">
-            <input class="form-control" type="text" aria-label="ok" placeholder="Nhập mật khẩu">
-            <img src="../../../public/img/eye-open.acd9355b68364f2c49674e40717030b4.svg" alt="Eye">
-        </div>
-        <div class="forgetPassword colorHexd54253">Quên mật khẩu</div>
-        <div class="btnLogin"></div>
-        <div class="orLoginBy">Hoặc đăng nhập bằng</div>
-        <div class="anotherLogin">
-            <img src="../../../public/img/google-icon.95b74dafb19a0e8456fadf05a2128b1c.svg" alt="Eye">
-            <img src="../../../public/img/facebook-icon.3b5930d921a997de582cb72610312ad6.svg" alt="Eye">
-            <img src="../../../public/img/microsoft-team.a274494a09c8b42526597d4e01a8e7bd.svg" alt="Eye">
-            <img src="../../../public/img/linkedIn-icon.f6ed07c85b2f83bdfe90ee245e823e87.svg" alt="Eye">
-            <img src="../../../public/img/github-icon.1bbdde4db5285353c4b43eba8ef5c6de.svg" alt="Eye">
-        </div>
-        <div class="Register">Bạn chưa có tài khoản? <span class="colorHexd54253">Đăng ký</span></div>
+        <form>
+            <h1 class="title">Đăng nhập <span class="colorHexd54253">TEK4.VN</span></h1>
+            <h3 class="description">HỌC TẬP - LUYỆN TẬP - CHIA SẺ - KẾT NỐI - MỞ RA CƠ HỘI NGHỀ NGHIỆP VÀ HƠN THẾ NỮA
+            </h3>
+            <div class="email input-box" id="blockEmail">
+                <img src="../../../public/img/userPrefix.e910c8576dc7245f624fe9f316667ee2.svg" alt="User">
+                <input class="inputEmail" id="inputEmail" type="text" aria-label="ok" placeholder="Nhập email">
+            </div>
+            <div class="password input-box" id="blockPassword">
+                <img src="../../../public/img/passwordPrefix.668c7912ab988a9f1e1adb4484a1b783.svg" alt="Password">
+                <input class="inputPassword" id="inputPassword" type="text" aria-label="ok" placeholder="Nhập mật khẩu">
+                <img src="../../../public/img/eye-open.acd9355b68364f2c49674e40717030b4.svg" alt="Eye">
+            </div>
+            <div class="forgetPassword colorHexd54253">Quên mật khẩu</div>
+            <div class="btnLogin">
+                <span>Đăng nhập</span>
+            </div>
+            <div class="orLoginBy displayFlexCenter">Hoặc đăng nhập bằng</div>
+            <div class="anotherLogin">
+                <a href="" class="link">
+                    <img src="../../../public/img/google-icon.95b74dafb19a0e8456fadf05a2128b1c.svg" alt="Eye">
+                </a>
+                <a href="" class="link">
+                    <img src="../../../public/img/facebook-icon.3b5930d921a997de582cb72610312ad6.svg" alt="Eye">
+                </a>
+                <a href="" class="link">
+                    <img src="../../../public/img/microsoft-team.a274494a09c8b42526597d4e01a8e7bd.svg" alt="Eye">
+                </a>
+                <a href="" class="link">
+                    <img src="../../../public/img/linkedIn-icon.f6ed07c85b2f83bdfe90ee245e823e87.svg" alt="Eye">
+                </a>
+                <a href="" class="link">
+                    <img src="../../../public/img/github-icon.1bbdde4db5285353c4b43eba8ef5c6de.svg" alt="Eye">
+                </a>
+            </div>
+            <div class="footer">Bạn chưa có tài khoản? <span class="colorHexd54253">Đăng ký</span></div>
+        </form>
     </div>
+
+    <script>
+        var blockEmail = document.getElementById("blockEmail");
+        var blockPassword = document.getElementById("blockPassword");
+        var inputEmail = document.getElementById("inputEmail");
+        var inputPassword = document.getElementById("inputPassword");
+        inputEmail.onclick = function () {
+            blockEmail.classList.add("input-boxClick");
+        };
+        inputPassword.onclick = function () {
+            blockPassword.classList.add("input-boxClick");
+        }
+    </script>
 </body>
 
 </html>
