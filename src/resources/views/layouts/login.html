@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="frame">
+    <div class="frame" id="frameMain">
         <form>
             <h1 class="title">Đăng nhập <span class="colorHexd54253">TEK4.VN</span></h1>
             <h3 class="description">HỌC TẬP - LUYỆN TẬP - CHIA SẺ - KẾT NỐI - MỞ RA CƠ HỘI NGHỀ NGHIỆP VÀ HƠN THẾ NỮA
@@ -23,9 +23,11 @@
             <div class="password input-box" id="blockPassword">
                 <img src="../../../public/img/passwordPrefix.668c7912ab988a9f1e1adb4484a1b783.svg" alt="Password">
                 <input class="inputPassword" id="inputPassword" type="text" aria-label="ok" placeholder="Nhập mật khẩu">
-                <img src="../../../public/img/eye-open.acd9355b68364f2c49674e40717030b4.svg" alt="Eye">
+                <img id="eye" src="../../../public/img/eye-open.acd9355b68364f2c49674e40717030b4.svg" alt="Eye">
             </div>
-            <div class="forgetPassword colorHexd54253">Quên mật khẩu</div>
+            <div class="forgetPassword ">
+                <a href="#" id="forgetPassword" class="colorHexd54253">Quên mật khẩu</a>
+            </div>
             <div class="btnLogin">
                 <span>Đăng nhập</span>
             </div>
@@ -51,6 +53,20 @@
         </form>
     </div>
 
+    <div class="frame displayNone" id="frameForgetPassword">
+        <form>
+            <div>Quên mật khẩu?</div>
+            <div>
+                <img src="../../../public/img/userPrefix.e910c8576dc7245f624fe9f316667ee2.svg" alt="User">
+                <input type="text" aria-label="ok" placeholder="Nhập email hoặc tên đăng nhập">
+            </div>
+            <div>Vui lòng nhập tên đăng nhập hoặc email của bạn, chúng tôi sẽ gửi một email hướng dẫn khôi phục mật khẩu
+                trong hòm thư của bạn.</div>
+            <div>Xác nhận</div>
+            <div>Quay trở lại trang <span>Đăng nhập</span></div>
+        </form>
+    </div>
+
     <script>
         var blockEmail = document.getElementById("blockEmail");
         var blockPassword = document.getElementById("blockPassword");
@@ -59,9 +75,37 @@
         inputEmail.onclick = function () {
             blockEmail.classList.add("input-boxClick");
         };
+        inputEmail.onblur = function () {
+            blockEmail.classList.remove("input-boxClick");
+        };
         inputPassword.onclick = function () {
             blockPassword.classList.add("input-boxClick");
-        }
+        };
+        inputPassword.onblur = function () {
+            blockPassword.classList.remove("input-boxClick");
+        };
+
+        var eye = document.getElementById("eye");
+        eye.onclick = function () {
+            // Kiểm tra trạng thái hiện tại của ảnh
+            // Sử dụng includes() để kiểm tra xem src của ảnh có chứa chuỗi eye-open hay không.
+            const checkStatus = eye.src.includes('eye-open');
+
+            // Thay đổi src của ảnh dựa trên trạng thái hiện tại
+            // Nếu ảnh đang mở (src chứa eye-open), thay đổi src sang ảnh "đóng".
+            // Nếu ảnh đang đóng (src không chứa eye-open), thay đổi src sang ảnh "mở".
+            eye.src = checkStatus ?
+                '../../../public/img/eye-close.eeb5c682705197501f00fd8c4ca3444e.svg' :
+                '../../../public/img/eye-open.acd9355b68364f2c49674e40717030b4.svg';
+        };
+
+        var forgetPassword = document.getElementById("forgetPassword");
+        forgetPassword.onclick = function () {
+            let frameMain = document.getElementById("frameMain");
+            frameMain.classList.add("displayNone");
+            let frameForgetPassword = document.getElementById("frameForgetPassword");
+            frameForgetPassword.classList.remove("displayNone");
+        };
     </script>
 </body>
 
