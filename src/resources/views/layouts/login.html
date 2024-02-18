@@ -49,21 +49,25 @@
                     <img src="../../../public/img/github-icon.1bbdde4db5285353c4b43eba8ef5c6de.svg" alt="Eye">
                 </a>
             </div>
-            <div class="footer">Bạn chưa có tài khoản? <span class="colorHexd54253">Đăng ký</span></div>
+            <div class="footer">Bạn chưa có tài khoản? <a href="register.html" class="colorHexd54253">Đăng ký</a></div>
         </form>
     </div>
 
     <div class="frame displayNone" id="frameForgetPassword">
         <form>
-            <div>Quên mật khẩu?</div>
-            <div>
+            <h1 class="title">Quên mật khẩu?</h1>
+            <div class="email input-box" id="blockInputEmailOrUserName">
                 <img src="../../../public/img/userPrefix.e910c8576dc7245f624fe9f316667ee2.svg" alt="User">
-                <input type="text" aria-label="ok" placeholder="Nhập email hoặc tên đăng nhập">
+                <input class="inputEmail" id="inputEmailOrUserName" type="text" aria-label="ok"
+                    placeholder="Nhập email hoặc tên đăng nhập">
             </div>
-            <div>Vui lòng nhập tên đăng nhập hoặc email của bạn, chúng tôi sẽ gửi một email hướng dẫn khôi phục mật khẩu
+            <div class="description">Vui lòng nhập tên đăng nhập hoặc email của bạn, chúng tôi sẽ gửi một email hướng
+                dẫn khôi phục mật khẩu
                 trong hòm thư của bạn.</div>
-            <div>Xác nhận</div>
-            <div>Quay trở lại trang <span>Đăng nhập</span></div>
+            <div class="btnConfirm">
+                <span class="btnLogin">Xác nhận</span>
+            </div>
+            <div class="footer">Quay trở lại trang <span class="colorHexd54253">Đăng nhập</span></div>
         </form>
     </div>
 
@@ -105,6 +109,15 @@
             frameMain.classList.add("displayNone");
             let frameForgetPassword = document.getElementById("frameForgetPassword");
             frameForgetPassword.classList.remove("displayNone");
+        };
+
+        var inputEmailOrUserName = document.getElementById("inputEmailOrUserName");
+        var blockInputEmailOrUserName = document.getElementById("blockInputEmailOrUserName");
+        inputEmailOrUserName.onclick = function () {
+            blockInputEmailOrUserName.classList.add("input-boxClick");
+        };
+        inputEmailOrUserName.onblur = function () {
+            blockInputEmailOrUserName.classList.remove("input-boxClick");
         };
     </script>
 </body>

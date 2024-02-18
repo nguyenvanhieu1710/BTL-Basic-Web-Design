@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEK4.VN - Cộng đồng công nghệ cho người Việt</title>
+    <link rel="shortcut icon" href="../../../public/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../../public/css/all.css">
+    <link rel="stylesheet" href="../../../public/css/login.css">
+    <link rel="stylesheet" href="../../../public/css/register.css">
+</head>
+
+<body>
+    <div class="frame">
+        <form>
+            <h1 class="title">Đăng ký TEK4.VN</h1>
+            <h3 class="description">Học tập - Luyện tập - Chia sẻ - Kết nối - Mở ra cơ hội nghề nghiệp và hơn thế nữa
+            </h3>
+            <div class="displayFlexAlign-itemsCenterAndJustify-contentSpace-between">
+                <div class="lastName email input-box" id="lastName">
+                    <img src="../../../public/img/name-icon.ede509425c9c05110d28a06dad35df3a.svg" alt="User">
+                    <input class="inputEmail" id="inputLastName" type="text" aria-label="ok" placeholder="Họ">
+                </div>
+                <div class="name email input-box" id="name">
+                    <img src="../../../public/img/name-icon.ede509425c9c05110d28a06dad35df3a.svg" alt="User">
+                    <input class="inputEmail" id="inputName" type="text" aria-label="ok" placeholder="Tên">
+                </div>
+            </div>
+            <div class="email input-box" id="blockEmail">
+                <img src="../../../public/img/email-icon.ccce795cca8c2c01b4b9f0199d6cdef3.svg" alt="User">
+                <input class="inputEmail" id="inputEmail" type="text" aria-label="ok" placeholder="Nhập email">
+            </div>
+            <div class="password email input-box" id="blockPassword">
+                <img src="../../../public/img/passwordPrefix.668c7912ab988a9f1e1adb4484a1b783.svg" alt="User">
+                <input class="inputEmail" id="inputPassword" type="text" aria-label="ok" placeholder="Mật khẩu">
+                <img id="eye" src="../../../public/img/eye-open.acd9355b68364f2c49674e40717030b4.svg" alt="Eye">
+            </div>
+            <div class="confirmPassword email input-box" id="blockConfirmPassword">
+                <img src="../../../public/img/passwordPrefix.668c7912ab988a9f1e1adb4484a1b783.svg" alt="User">
+                <input class="inputEmail" id="inputConfirmPassword" type="text" aria-label="ok"
+                    placeholder="Xác nhận mật khẩu">
+                <img id="eyeTwo" src="../../../public/img/eye-open.acd9355b68364f2c49674e40717030b4.svg" alt="Eye">
+            </div>
+            <div class="btnRegister btnLogin">Đăng ký</div>
+            <div class="policy">Bằng cách đăng ký TEK4.VN, bạn đồng ý với <a
+                    href="https://tek4.vn/gioi-thieu/dieu-khoan-dich-vu" class="colorHexd54253">Điều khoản dịch
+                    vụ</a> và
+                <a href="https://tek4.vn/gioi-thieu/chinh-sach-quyen-rieng-tu" class="colorHexd54253">Chính sách quyền
+                    riêng tư</a>
+                của TEK4.VN.
+            </div>
+            <div class="orLoginBy displayFlexCenter">Hoặc bạn cũng có thể kết nối với chúng
+                tôi thông qua</div>
+            <div class="anotherLogin">
+                <a href="" class="link">
+                    <img src="../../../public/img/google-icon.95b74dafb19a0e8456fadf05a2128b1c.svg" alt="Eye">
+                </a>
+                <a href="" class="link">
+                    <img src="../../../public/img/facebook-icon.3b5930d921a997de582cb72610312ad6.svg" alt="Eye">
+                </a>
+                <a href="" class="link">
+                    <img src="../../../public/img/microsoft-team.a274494a09c8b42526597d4e01a8e7bd.svg" alt="Eye">
+                </a>
+                <a href="" class="link">
+                    <img src="../../../public/img/linkedIn-icon.f6ed07c85b2f83bdfe90ee245e823e87.svg" alt="Eye">
+                </a>
+                <a href="" class="link">
+                    <img src="../../../public/img/github-icon.1bbdde4db5285353c4b43eba8ef5c6de.svg" alt="Eye">
+                </a>
+            </div>
+            <div class="footer">Bạn đã có tài khoản? <a href="login.html" class="colorHexd54253">Đăng nhập</a></div>
+        </form>
+    </div>
+
+    <script>
+        var blockLastName = document.getElementById("lastName");
+        var inputLastName = document.getElementById("inputLastName");
+        inputLastName.onclick = function () {
+            blockLastName.classList.add("input-boxClick");
+        };
+        inputLastName.onblur = function () {
+            blockLastName.classList.remove("input-boxClick");
+        };
+
+        var blockName = document.getElementById("name");
+        var inputName = document.getElementById("inputName");
+        inputName.onclick = function () {
+            blockName.classList.add("input-boxClick");
+        };
+        inputName.onblur = function () {
+            blockName.classList.remove("input-boxClick");
+        };
+
+        var blockEmail = document.getElementById("blockEmail");
+        var inputEmail = document.getElementById("inputEmail");
+        inputEmail.onclick = function () {
+            blockEmail.classList.add("input-boxClick");
+        };
+        inputEmail.onblur = function () {
+            blockEmail.classList.remove("input-boxClick");
+        };
+
+        var blockPassword = document.getElementById("blockPassword");
+        var inputPassword = document.getElementById("inputPassword");
+        inputPassword.onclick = function () {
+            blockPassword.classList.add("input-boxClick");
+        };
+        inputPassword.onblur = function () {
+            blockPassword.classList.remove("input-boxClick");
+        };
+
+        var blockConfirmPassword = document.getElementById("blockConfirmPassword");
+        var inputConfirmPassword = document.getElementById("inputConfirmPassword");
+        inputConfirmPassword.onclick = function () {
+            blockConfirmPassword.classList.add("input-boxClick");
+        };
+        inputConfirmPassword.onblur = function () {
+            blockConfirmPassword.classList.remove("input-boxClick");
+        };
+
+        var eye = document.getElementById("eye");
+        eye.onclick = function () {
+            // Kiểm tra trạng thái hiện tại của ảnh
+            // Sử dụng includes() để kiểm tra xem src của ảnh có chứa chuỗi eye-open hay không.
+            const checkStatus = eye.src.includes('eye-open');
+
+            // Thay đổi src của ảnh dựa trên trạng thái hiện tại
+            // Nếu ảnh đang mở (src chứa eye-open), thay đổi src sang ảnh "đóng".
+            // Nếu ảnh đang đóng (src không chứa eye-open), thay đổi src sang ảnh "mở".
+            eye.src = checkStatus ?
+                '../../../public/img/eye-close.eeb5c682705197501f00fd8c4ca3444e.svg' :
+                '../../../public/img/eye-open.acd9355b68364f2c49674e40717030b4.svg';
+        };
+
+        var eyeTwo = document.getElementById("eyeTwo");
+        eyeTwo.onclick = function () {
+            // Kiểm tra trạng thái hiện tại của ảnh
+            // Sử dụng includes() để kiểm tra xem src của ảnh có chứa chuỗi eye-open hay không.
+            const checkStatus = eyeTwo.src.includes('eye-open');
+
+            // Thay đổi src của ảnh dựa trên trạng thái hiện tại
+            // Nếu ảnh đang mở (src chứa eye-open), thay đổi src sang ảnh "đóng".
+            // Nếu ảnh đang đóng (src không chứa eye-open), thay đổi src sang ảnh "mở".
+            eyeTwo.src = checkStatus ?
+                '../../../public/img/eye-close.eeb5c682705197501f00fd8c4ca3444e.svg' :
+                '../../../public/img/eye-open.acd9355b68364f2c49674e40717030b4.svg';
+        };
+    </script>
+</body>
+
+</html>

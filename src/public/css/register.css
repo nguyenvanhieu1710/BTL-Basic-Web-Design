@@ -1,0 +1,24 @@
+.frame {
+  margin: 22px 25%;
+  min-width: 578px;
+}
+
+.title {
+  font-size: 1rem;
+}
+
+.description {
+  color: #868991;
+}
+
+.btnRegister {
+  margin-bottom: 0;
+}
+
+.policy {
+  color: #868991;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  margin-top: 0.75rem;
+}

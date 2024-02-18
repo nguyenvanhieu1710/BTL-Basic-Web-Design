@@ -72,6 +72,17 @@
   text-align: right;
 }
 
+#frameForgetPassword {
+  margin: 114px 30%;
+  max-width: 27.8125rem;
+  width: 27.8125rem;
+}
+
+.btnConfirm {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
 .btnLogin {
   background: linear-gradient(
     180deg,
