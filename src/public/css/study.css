@@ -1,0 +1,29 @@
+.navLeft {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5.3rem;
+  color: #fff;
+  text-align: center;
+  height: calc(100vh - 5.3rem);
+  padding: 0.2rem 0.5rem;
+  width: 125px;
+  background-color: #111319;
+}
+
+.navLeft__blockTopic {
+  padding: 5px;
+}
+
+.line {
+  margin: 0.5rem 0;
+  border-top: 1px solid #353945;
+}
+
+.content {
+  margin-left: 125px;
+}
+
+.header__ImgBanner {
+  width: 1170px;
+  height: 130px;
+}
