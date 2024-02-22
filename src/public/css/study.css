@@ -1,12 +1,13 @@
 .navLeft {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 5.3rem;
+  left: 0;
   color: #fff;
   text-align: center;
   height: calc(100vh - 5.3rem);
   padding: 0.2rem 0.5rem;
-  width: 125px;
+  /* width: 125px; */
+  width: 110px;
   background-color: #111319;
 }
 
@@ -20,10 +21,65 @@
 }
 
 .content {
+  margin-top: 5.3rem;
   margin-left: 125px;
+  padding: 0 111px;
+}
+
+.banner2 {
+  background-color: #111319;
+  margin-bottom: 5rem;
 }
 
 .header__ImgBanner {
+  margin-top: 18px;
   width: 1170px;
   height: 130px;
+}
+
+.courses {
+  padding: 0;
+  padding-top: 30px;
+}
+
+.course__title {
+  margin-bottom: 18px;
+}
+
+.course__descriptionUnderTitle {
+  width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+
+.column {
+  padding: 0 17px;
+  position: relative;
+}
+
+.tagBasic {
+  position: absolute;
+  top: 1rem;
+  right: 11px;
+  z-index: 1;
+}
+
+.blockCourse {
+  height: 100%;
+  margin: 0 0;
+  background-color: #191c26;
+  padding: 0;
+  border: 2px solid #b8bcc6;
+  border-radius: 0.5rem;
+}
+
+.course__blockBtnStudyNow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.course__btnStudyNow {
+  margin-bottom: 0;
 }
