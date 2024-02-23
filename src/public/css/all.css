@@ -39,6 +39,10 @@ a {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .FlexAlign-itemsCenter {
   display: flex;
   align-items: center;
@@ -191,6 +195,10 @@ a {
 
 .background-colorRgb3162184 {
   background-color: rgb(3, 162, 184);
+}
+
+.colorHexa3bbf5 {
+  color: #a3bbf5;
 }
 
 .colorHex868991 {
