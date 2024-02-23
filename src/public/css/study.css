@@ -50,7 +50,7 @@
   width: 780px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 15px;
+  margin-bottom: 60px;
 }
 
 .column {
@@ -74,6 +74,15 @@
   border-radius: 0.5rem;
 }
 
+.course__descriptionDetailCourse {
+  width: 320px;
+  margin-left: 23px;
+}
+
+.course__descriptionDetailCourse-line {
+  border-top: 1px solid #fff;
+}
+
 .course__blockBtnStudyNow {
   width: 100%;
   display: flex;
@@ -82,4 +91,14 @@
 
 .course__btnStudyNow {
   margin-bottom: 0;
+  padding: 4px 24px;
+  font-size: 12px;
+}
+
+.course__blockRow2 {
+  margin-top: 44px;
+}
+
+.practice__btnPracticeNow {
+  border: 2px solid #d54253;
 }
