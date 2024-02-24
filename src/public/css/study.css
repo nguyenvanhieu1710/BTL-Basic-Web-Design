@@ -140,8 +140,140 @@
 
 .practice {
   background-color: #111319;
+  margin-top: 82px;
 }
 
 .practice__descriptionUnderTitle {
   width: 748px;
+}
+
+.practice__practiceTopics {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 47px;
+}
+
+.practice__topic {
+  padding: 0 17px;
+}
+
+.practice__blockTopic {
+  width: 356px;
+  border: 1px solid #777682;
+  border-radius: 5px;
+  padding: 24px 9px;
+}
+
+.practice__topicContent {
+  display: flex;
+  margin-bottom: 22px;
+}
+
+.practice__blockImg {
+  padding: 16px 9px 0px 9px;
+}
+
+.practice__textContent {
+  padding: 0 8px;
+}
+
+.practice__titleTopic,
+.practice__descriptionUnderTitleTopic,
+.numberOfLessons {
+  width: 237px;
+  white-space: nowrap; /* không xuống dòng */
+  overflow: hidden; /* ẩn nội dung bị thừa */
+  text-overflow: ellipsis; /* thêm dấu ... đằng sau */
+}
+
+.practice__titleTopic {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.practice__descriptionUnderTitleTopic {
+  color: #b8bcc6;
+  margin-bottom: 8px;
+}
+
+.numberOfLessons {
+  color: #b8bcc6;
+  font-size: 13.2px;
+  margin-bottom: 13px;
+}
+
+.practice__btnStart {
+  width: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.practice__btnStart img {
+  margin-right: 7px;
+}
+
+.practice__avatras {
+  display: flex;
+}
+
+.avatar {
+  border: 1px solid #f4f4f4;
+  border-radius: 50%;
+}
+
+.practice__avatars .avatar1 {
+  width: 28px;
+  height: 28px;
+}
+
+.practice__avatars .avatar2 {
+  width: 24px;
+  height: 24px;
+}
+
+.practice__avatars .avatar3 {
+  width: 20px;
+  height: 20px;
+}
+
+.tutorial {
+  margin-top: 120px;
+}
+
+.tutorial__topics {
+  margin: 32px -16px 55px -16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tutorial__topic {
+  padding: 0 17px 32px 17px;
+}
+
+.tutorial__topic .content {
+  background: #111319;
+  border: 1px solid #3d4048;
+  border-radius: 0.5rem;
+  box-shadow: 0 14px 10px rgba(0, 0, 0, 0.33), 0 10px 4px rgba(0, 0, 0, 0.22);
+}
+
+.tutorial__topic .heading {
+  background-color: #000;
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 1rem 1.5rem;
+}
+
+.tutorial__topic .heading div {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+* {
+  box-sizing: border-box;
 }
