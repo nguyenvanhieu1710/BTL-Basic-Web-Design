@@ -6,13 +6,18 @@
   text-align: center;
   height: calc(100vh - 5.3rem);
   padding: 0.2rem 0.5rem;
-  /* width: 125px; */
-  width: 110px;
+  width: 118px;
   background-color: #111319;
 }
 
 .navLeft__blockTopic {
   padding: 5px;
+  border-radius: 5px;
+}
+
+.navLeft__blockTopic:hover {
+  cursor: pointer;
+  background: hsla(0, 0%, 77%, 0.2);
 }
 
 .line {
@@ -22,7 +27,7 @@
 
 .content {
   margin-top: 5.3rem;
-  margin-left: 125px;
+  margin-left: 118px;
   padding: 0 111px;
 }
 
@@ -139,8 +144,13 @@
 }
 
 .practice {
+  background: none;
   background-color: #111319;
   margin-top: 82px;
+}
+
+.practice__heading {
+  padding-top: 64px;
 }
 
 .practice__descriptionUnderTitle {
@@ -215,10 +225,6 @@
   margin-right: 7px;
 }
 
-.practice__avatras {
-  display: flex;
-}
-
 .avatar {
   border: 1px solid #f4f4f4;
   border-radius: 50%;
@@ -252,9 +258,10 @@
 
 .tutorial__topic {
   padding: 0 17px 32px 17px;
+  width: 600px;
 }
 
-.tutorial__topic .content {
+.tutorial__topic-content {
   background: #111319;
   border: 1px solid #3d4048;
   border-radius: 0.5rem;
@@ -265,6 +272,9 @@
   background-color: #000;
   border-radius: 0.5rem 0.5rem 0 0;
   padding: 1rem 1.5rem;
+  height: 65px;
+  display: flex;
+  align-items: center;
 }
 
 .tutorial__topic .heading div {
@@ -272,6 +282,49 @@
   font-size: 1.25rem;
   color: #fff;
   margin-bottom: 0;
+}
+
+.lessons-list {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.lessons {
+  width: 141px;
+  height: 120px;
+}
+
+.lessons-blockImg {
+  margin-top: 20px;
+  padding: 0 40px;
+}
+
+.lessons-img {
+  width: 63px;
+  height: 46px;
+}
+
+.img41x46 {
+  width: 41px;
+  height: 46px;
+}
+
+.img46x46 {
+  width: 46px;
+  height: 46px;
+}
+
+.lessonName {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+footer {
+  padding: 2rem 25px;
+  margin-left: -111px;
+  margin-right: -111px;
 }
 
 * {

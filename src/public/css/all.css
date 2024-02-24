@@ -301,6 +301,10 @@ a {
   height: 4rem;
 }
 
+.width224px {
+  width: 224px;
+}
+
 .width237px {
   width: 237px;
 }
@@ -319,6 +323,10 @@ a {
 
 .width520px {
   width: 520px;
+}
+
+.width674px {
+  width: 674px;
 }
 
 .width715px {

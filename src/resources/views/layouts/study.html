@@ -223,24 +223,24 @@
     </header>
     <div class="displayFlex">
         <div class="navLeft">
-            <div class="navLeft__blockTopic">
+            <div class="navLeft__blockTopic navLeft__roadmap">
                 <img src="../../../public/img/lo-trinh-icon.svg" alt="Icon-Logo">
                 <div>Lộ trình</div>
             </div>
-            <div class="navLeft__blockTopic">
+            <div class="navLeft__blockTopic navLeft__course">
                 <img src="../../../public/img/khoa-hoc-icon.svg" alt="Icon-Logo">
                 <div>Khóa học</div>
             </div>
-            <div class="navLeft__blockTopic">
+            <div class="navLeft__blockTopic navLeft__practice">
                 <img src="../../../public/img/luyen-tap-icon.svg" alt="Icon-Logo">
                 <div>Luyện tập</div>
             </div>
             <div class="line"></div>
-            <div class="navLeft__blockTopic">
+            <div class="navLeft__blockTopic navLeft__tutorial">
                 <img src="../../../public/img/tutorial-icon.svg" alt="Icon-Logo">
                 <div>Tutorial</div>
             </div>
-            <div class="navLeft__blockTopic">
+            <div class="navLeft__blockTopic navLeft__chooseProfession">
                 <img src="../../../public/img/chon-nghe-icon.svg" alt="Icon-Logo">
                 <div>Chọn nghề</div>
             </div>
@@ -490,9 +490,8 @@
                     </div>
                 </div>
                 <div class="row displayFlexCenter">
-                    <button class="practice__btnPracticeNow displayFlexCenter">
+                    <button class="practice__btnPracticeNow roadmap__seeMore displayFlexCenter">
                         <span class="colorHexd54253">Xem thêm</span>
-                        <!-- <img src="../../../public/img/arrow-right-red.svg" alt="Arrow Right"> -->
                     </button>
                 </div>
             </div>
@@ -606,7 +605,7 @@
             <!-- End Roadmap -->
             <!-- Practice -->
             <div class="practice">
-                <div class="title course__title center">Luyện tập</div>
+                <div class="title course__title center practice__heading">Luyện tập</div>
                 <div class="descriptionUnderTitle practice__descriptionUnderTitle course__descriptionUnderTitle center">
                     Luyện tập, củng cố kiến thức sau các khóa học qua các bài tập theo từng chủ đề, từng ngôn ngữ lập
                     trình tại <span><img src="../../../public/img/logo-tek.svg" alt=""></span>
@@ -786,23 +785,79 @@
                 <div class="title text-alignCenter">Tutorial</div>
                 <div class="tutorial__topics">
                     <div class="tutorial__topic">
-                        <div class="content">
+                        <div class="tutorial__topic-content">
                             <div class="heading">
                                 <div>Hướng dẫn giải bài tập lập trình cơ bản</div>
                             </div>
                             <div class="lessons">
-                                <img src="../../../public/img/image_processing20220916-1-q35lpg.png" alt="">
+                                <div class="lessons-blockImg">
+                                    <img class="lessons-img"
+                                        src="../../../public/img/image_processing20220916-1-q35lpg.png" alt="">
+                                </div>
+                                <div class="lessonName"><a href="">Bài tập C</a></div>
                             </div>
                         </div>
                     </div>
+                    <div class="tutorial__topic">
+                        <div class="tutorial__topic-content">
+                            <div class="heading">
+                                <div>Lập trình căn bản</div>
+                            </div>
+                            <div class="lessons-list">
+                                <div class="lessons">
+                                    <div class="lessons-blockImg">
+                                        <img class="lessons-img img41x46"
+                                            src="../../../public/img/image_processing20220907-1-bufyef.png" alt="">
+                                    </div>
+                                    <div class="lessonName"><a href="">C Tutorial</a></div>
+                                </div>
+                                <div class="lessons">
+                                    <div class="lessons-blockImg">
+                                        <img class="lessons-img img46x46"
+                                            src="../../../public/img/image_processing20220926-1-opdd3a.png" alt="">
+                                    </div>
+                                    <div class="lessonName"><a href="">Python Tutorial</a></div>
+                                </div>
+                                <div class="lessons">
+                                    <div class="lessons-blockImg">
+                                        <img class="lessons-img img41x46"
+                                            src="../../../public/img/image_processing20221228-1-to7590.png" alt="">
+                                    </div>
+                                    <div class="lessonName"><a href="">C++ Tutorial</a></div>
+                                </div>
+                                <div class="lessons">
+                                    <div class="lessons-blockImg">
+                                        <img class="lessons-img img46x46"
+                                            src="../../../public/img/image_processing20221228-1-ylttb.png" alt="">
+                                    </div>
+                                    <div class="lessonName"><a href="">Java Tutorial</a></div>
+                                </div>
+                            </div>
 
+                        </div>
+                    </div>
+                    <div class="tutorial__topic">
+                        <div class="tutorial__topic-content">
+                            <div class="heading">
+                                <div>Lập trình web</div>
+                            </div>
+                            <div class="lessons">
+                                <div class="lessons-blockImg">
+                                    <img class="lessons-img img41x46"
+                                        src="../../../public/img/image_processing20221228-1-7ng6tx.png" alt="">
+                                </div>
+                                <div class="lessonName"><a href="">JavaScript Tutorial</a></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- End Tutorial -->
             <!-- Footer -->
-            <footer class="background-colorHex111319 displayNone">
-                <div class="row paddingTopBottom2rem">
+            <footer class="background-colorHex111319 ">
+                <div class="">
                     <div class="displayFlex footer__blocktitle1">
-                        <div class="column width715px">
+                        <div class="column width674px">
                             <div><img class="footer__imgLogoTek4" src="../../../public/img/logo-2.webp" alt="Logo">
                             </div>
                             <div class="footer__TextUnderImgAndAboveIcon">Chia sẻ kiến thức - Kết nối tương lai</div>
@@ -823,18 +878,18 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="column width237px">
+                        <div class="column width224px">
                             <div class="footer__blocktitle1-title">Về chúng tôi</div>
                             <div class="footer__blocktitle1-underTitle">Giới thiệu</div>
                             <div class="footer__blocktitle1-underTitle">Chính sách bảo mật</div>
                             <div class="footer__blocktitle1-underTitle">Điều khoản dịch vụ</div>
                         </div>
-                        <div class="column width237px">
+                        <div class="column width224px">
                             <div class="footer__blocktitle1-title">Học miễn phí</div>
                             <div class="footer__blocktitle1-underTitle">Khóa học</div>
                             <div class="footer__blocktitle1-underTitle">Luyện tập</div>
                         </div>
-                        <div class="column width237px">
+                        <div class="column width224px">
                             <div class="footer__blocktitle1-title">Cộng đồng</div>
                             <div class="footer__blocktitle1-underTitle">Kiến thức</div>
                             <div class="footer__blocktitle1-underTitle">Tin tức</div>
@@ -842,7 +897,7 @@
                         </div>
                     </div>
                     <div class="displayFlex footer__blocktitle2">
-                        <div class="column width715px">
+                        <div class="column width674px">
                             <div class="footer__CompanyName">CÔNG TY CỔ PHẦN CÔNG NGHỆ GIÁO DỤC VÀ DỊCH VỤ BRONTOBYTE
                             </div>
                             <div class="footer__CompanyAddress displayFlex">
@@ -852,7 +907,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="column width237px">
+                        <div class="column width224px">
                             <div class="footer__ContactInfor">THÔNG TIN LIÊN HỆ</div>
                             <div>
                                 <span class="footer__IconEmail"><i class="fa-solid fa-envelope"></i></span>
@@ -869,6 +924,7 @@
                     </div>
                 </div>
             </footer>
+            <!-- End Footer -->
         </div>
     </div>
     <script src="../../../app/controllers/home.js"></script>
