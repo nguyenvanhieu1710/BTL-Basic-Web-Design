@@ -109,12 +109,19 @@ a {
   margin-top: 90px;
 }
 
+.marginTopBottom5px {
+  margin: 5px 0;
+}
 .marginTopBottom90px {
   margin: 90px 0;
 }
 
-.marginTopBottom5px {
-  margin: 5px 0;
+.marginBottom6px {
+  margin-bottom: 6px;
+}
+
+.marginBottom12px {
+  margin-bottom: 12px;
 }
 
 .marginBottom16px {
@@ -129,12 +136,12 @@ a {
   margin: 30px 0 50px 0;
 }
 
-.marginLeftRight0375rem {
-  margin: 0 0.375rem;
-}
-
 .margin-left60px {
   margin-left: 60px;
+}
+
+.marginRight8px {
+  margin-right: 8px;
 }
 
 .marginRight230px {
@@ -143,6 +150,10 @@ a {
 
 .marginLeftRight50px {
   margin: 0 50px;
+}
+
+.marginLeftRight0375rem {
+  margin: 0 0.375rem;
 }
 
 .overflowHidden {

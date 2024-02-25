@@ -32,4 +32,112 @@
 
 .topics__exempleTopic {
   margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.topics__exempleTopic-left {
+  width: 49%;
+  height: 388px;
+  position: relative;
+  cursor: pointer;
+  background: linear-gradient(180deg, rgba(17, 19, 25, 0), #111318);
+  overflow: hidden;
+}
+
+.topics__imgBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.topics__btnKnowledge {
+  position: absolute;
+  top: 6.5%;
+  left: 6.5%;
+  min-width: 4.19rem;
+  height: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #ffffff;
+  background: linear-gradient(180deg, #c83546, #ff8795);
+  border: none;
+  border-radius: 0.25rem;
+  padding: 4px 15px;
+}
+
+.topics__exempleTopic-content {
+  position: absolute;
+  width: 100%;
+  bottom: 8.6%;
+  left: 6.5%;
+}
+
+.topics__description {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.topics__description .iconDot {
+  width: 0.35rem;
+  height: 0.35rem;
+  margin: 0 0.75rem;
+}
+
+.topics__description .topics__btnTopic {
+  height: 1.625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4671ff;
+  border: none;
+  padding: 0 0.5rem;
+  margin-right: 0.2rem;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.topics__title {
+  width: 90%;
+  font-size: 20px;
+  font-weight: 700;
+  color: #e1e4eb;
+}
+
+.topics__exempleTopic-right {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.topics__exempleTopic-right .container {
+  width: 49%;
+  height: 49%;
+  position: relative;
+  cursor: pointer;
+  background: linear-gradient(180deg, rgba(17, 19, 25, 0), #111318);
+  overflow: hidden;
+}
+
+.topics__exempleTopic-right .topics__description {
+  font-size: 8px;
+}
+
+.topics__exempleTopic-right .topics__btnTopic {
+  height: 1.125rem;
+  font-size: 8px;
+}
+
+.topics__exempleTopic-right .topics__title {
+  font-size: 14px;
 }
