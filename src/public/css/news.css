@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+.navLeft__topicName {
+  font-size: 12px;
+}
+
+.topics {
+  margin-top: 47px;
+}
+
+.topics__topic-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topics__topic-list .background-colorHexe91f63 {
+  border: 1.6px solid #ffa8bd;
+  box-shadow: #ffffff 0px 0px 4px 0px;
+}
+
+.topics__blockTopic {
+  color: #e1e4eb;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  padding: 0 32px;
+  border-radius: 4px;
+  line-height: 48px;
+}
+
+.topics__exempleTopic {
+  margin-top: 48px;
+}
