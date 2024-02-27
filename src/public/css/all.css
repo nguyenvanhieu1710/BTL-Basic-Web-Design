@@ -340,6 +340,10 @@ a {
   height: 4rem;
 }
 
+.width16px {
+  width: 16px;
+}
+
 .width224px {
   width: 224px;
 }
