@@ -85,6 +85,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 0.5rem;
+  color: #cdd7db;
 }
 
 .topics__description .iconDot {
@@ -102,8 +103,11 @@
   border: none;
   padding: 0 0.5rem;
   margin-right: 0.2rem;
-  color: #fff;
+  color: #cdd7db;
   border-radius: 2px;
+  white-space: nowrap; /* không xuống dòng */
+  overflow: hidden; /* ẩn nội dung bị thừa */
+  text-overflow: ellipsis; /* thêm dấu ... đằng sau */
 }
 
 .topics__title {
@@ -179,7 +183,7 @@
 
 .trend__content {
   margin: 0 -7px;
-  padding: 30px 33px 63px 33px;
+  padding: 0px 33px 63px 33px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -187,10 +191,13 @@
 .trend__content-item {
   display: flex;
   padding-right: 63px;
+  min-height: 175px;
+  flex: 1;
+  margin-top: 30px;
 }
 
 .trend-content-item__number {
-  padding: 0 5px;
+  padding: 0 6px;
   position: relative;
 }
 
@@ -204,5 +211,47 @@
 }
 
 .trend-content-item__content {
-  width: 415px;
+  min-width: 415px;
+  padding: 0 6px;
+}
+
+.trend-content-item__content .blockAuthor {
+  display: flex;
+  align-items: center;
+}
+
+.trend-content-item__content .blockAuthor .logo {
+  font-size: 14px;
+  background-color: #d54253;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  display: inline-block;
+}
+
+.trend-content-item__content .blockAuthor .authorName {
+  margin: 0 6px;
+  color: #cdd7db;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.trend-content-item__content-headingName {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 38px;
+  margin-top: 13px;
+  margin-bottom: 24px;
+  /* giới hạn số dòng */
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  overflow: hidden;
+  /* theo chiều dọc */
+  -webkit-box-orient: vertical;
+  /* ngắt dòng ...  */
+  word-break: break-word;
+  cursor: pointer;
 }

@@ -292,6 +292,10 @@ a {
   color: #ffbe3d;
 }
 
+.colorHexcdd7db {
+  color: #cdd7db;
+}
+
 .fontWeight700 {
   font-weight: 700;
 }
@@ -302,6 +306,18 @@ a {
 
 .fontWeight400 {
   font-weight: 400;
+}
+
+.font-size12px {
+  font-size: 12px;
+}
+
+.font-size16px {
+  font-size: 16px;
+}
+
+.font-size14px {
+  font-size: 14px;
 }
 
 .font-size1rem {
