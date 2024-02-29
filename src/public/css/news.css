@@ -152,7 +152,6 @@
 
 .trend__heading {
   display: flex;
-  margin-bottom: 15px;
 }
 
 .trend__heading-text {
@@ -161,6 +160,7 @@
   font-weight: 700;
   margin-left: 7px;
   margin-bottom: 15px;
+  padding-bottom: 16px;
   border-bottom: 0.25rem solid #111319;
 }
 
@@ -254,4 +254,115 @@
   /* ngắt dòng ...  */
   word-break: break-word;
   cursor: pointer;
+}
+
+.famousTopics {
+  background-color: transparent;
+}
+
+.famousTopics__heading-text {
+  margin-left: 0;
+}
+
+.famousTopics__topic-list {
+  display: flex;
+}
+
+.famousTopics__topic-item {
+  margin: 0 5px;
+  padding: 0 15px;
+  min-height: 30px;
+  background-color: #4d546a;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  color: #e1e4eb;
+  font-weight: 600;
+}
+
+.famousTopics__content {
+  margin-top: 56px;
+  margin-bottom: 47px;
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.famousTopics__content-left {
+  flex: 1.8;
+}
+
+.famousTopics__topicContent-list {
+  margin-bottom: 59px;
+}
+
+.famousTopics__topicContent-item {
+  height: 220px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #111319;
+  border: 1px solid #3f5765;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  display: flex;
+}
+
+.famousTopics__itemImg {
+  width: 315px;
+  height: 200px;
+  /* kiểu như cho ảnh zoom to lên á */
+  object-fit: cover;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.famousTopics__itemHeading {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 4px;
+}
+
+.famousTopics__topicContent-item .blockContent {
+  padding: 0 7px;
+  padding-top: 10px;
+  flex: 1.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.famousTopics__topicContent-item .blockAuthor {
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.famousTopics__topicContent-item .blockAuthor .authorName {
+  color: #6288ac;
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.famousTopics__itemDescription {
+  /* giới hạn số dòng */
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  overflow: hidden;
+  /* theo chiều dọc */
+  -webkit-box-orient: vertical;
+  /* ngắt dòng ...  */
+  word-break: break-word;
+  font-size: 12px;
+  line-height: 19px;
+}
+
+.nextPage {
+  /* display: flex;
+  flex: 1.8; */
+}
+
+.famousTopics__content-right {
+  flex: 1;
 }
