@@ -285,11 +285,10 @@
   margin-top: 56px;
   margin-bottom: 47px;
   display: flex;
-  /* flex-direction: column; */
 }
 
 .famousTopics__content-left {
-  flex: 1.8;
+  flex: 2;
 }
 
 .famousTopics__topicContent-list {
@@ -359,10 +358,62 @@
 }
 
 .nextPage {
-  /* display: flex;
-  flex: 1.8; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1.9;
+  min-height: 37px;
+  color: #b8bcc6;
+}
+
+.nextPage div {
+  margin-left: 8px;
+}
+
+.nextPage .nextPage__btnNext:first-child {
+  cursor: not-allowed;
+}
+
+.nextPage .nextPage__btnNext {
+  background-color: #13161b;
+  border-radius: 50%;
+  border: 1px solid #b8bcc6;
+  min-width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+}
+
+.nextPage .numberOfPages {
+  background-color: #13161b;
+  border-radius: 50%;
+  border: 1px solid #b8bcc6;
+  min-width: 36px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+}
+
+.numberOfPages.onePage,
+.nextPage .numberOfPages:hover,
+.nextPage .nextPage__btnNext:hover {
+  color: #d54253;
+  border: 1px solid #d54253;
+}
+
+.nextPage .threeDots {
+  min-width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.threeDots + div {
+  margin-left: 0;
 }
 
 .famousTopics__content-right {
   flex: 1;
+  margin-left: 16px;
 }
