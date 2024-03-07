@@ -100,6 +100,14 @@ a {
   padding-bottom: 2rem;
 }
 
+.marginTop10px {
+  margin-top: 10px !important;
+}
+
+.marginTop14px {
+  margin-top: 14px !important;
+}
+
 .marginTop2rem {
   /* tương đương 32px */
   margin-top: 2rem;
@@ -312,12 +320,16 @@ a {
   font-size: 12px;
 }
 
-.font-size16px {
-  font-size: 16px;
-}
-
 .font-size14px {
   font-size: 14px;
+}
+
+.font-size16px {
+  font-size: 16px !important;
+}
+
+.font-size18px {
+  font-size: 18px !important;
 }
 
 .font-size1rem {
