@@ -430,3 +430,51 @@
   font-size: 16px;
   cursor: pointer;
 }
+
+.topAuthor-item {
+  margin-bottom: 35px;
+}
+
+.topAuthor-item__info {
+  position: relative;
+}
+
+.topAuthor-item__info .topAuthor-item__avatar {
+  /* border: 1px solid #d54253; */
+  border-radius: 50%;
+  /* như kiểu ảnh zoom ra và bỏ đi phần rìa */
+  object-fit: cover;
+  display: inline-block;
+  text-align: center;
+  line-height: 44px;
+}
+
+.topAuthor-item__info .numberAuthour {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+}
+
+.topAuthor-item__info .iconPrize {
+  width: 26px;
+  height: 30px;
+  margin-top: 3px;
+}
+
+.topAuthor-item .topAuthor-item__interact {
+  min-height: 24px;
+  margin-left: 10px;
+}
+
+.topAuthor-item__interact div {
+  margin-right: 23px;
+}
+
+.topAuthor-item__interact div img {
+  margin-right: 7px;
+}
+
+.topAuthor-item__interact .numberInteract {
+  font-size: 10px;
+  font-weight: 300;
+}

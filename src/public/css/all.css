@@ -73,6 +73,11 @@ a {
   float: right;
 }
 
+.paddingLeftRight8px {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+
 .paddingLeftRight35px {
   padding-left: 35px;
   padding-right: 35px;
@@ -406,6 +411,16 @@ a {
 
 .width840px {
   width: 840px;
+}
+
+.width-height16px {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.width-height44px {
+  width: 44px !important;
+  height: 44px !important;
 }
 
 .logoImage {
