@@ -105,6 +105,10 @@ a {
   padding-bottom: 2rem;
 }
 
+.marginTop8px {
+  margin-top: 8px !important;
+}
+
 .marginTop10px {
   margin-top: 10px !important;
 }
@@ -319,6 +323,14 @@ a {
 
 .fontWeight400 {
   font-weight: 400;
+}
+
+.font-size8px {
+  font-size: 8px !important;
+}
+
+.font-size10px {
+  font-size: 10px !important;
 }
 
 .font-size12px {

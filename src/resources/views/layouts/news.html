@@ -2407,6 +2407,302 @@
                         <!-- End List Author -->
                         <div class="marginTop14px text-alignCenter colorHexd54253">Xem thêm</div>
                         <!-- End Top Author -->
+                        <!-- Technology -->
+                        <div class="technology">
+                            <div class="trend__heading marginTop14px">
+                                <div class="trend__heading-text famousTopics__heading-text famousTagList marginTop10px">
+                                    <span>Công nghệ</span>
+                                </div>
+                            </div>
+                            <div class="technology__arrow displayFlex">
+                                <div>
+                                    <img class="width-height16px" src="../../../public/img/arrow_chevron_left.svg"
+                                        alt="">
+                                </div>
+                                <div>
+                                    <img class="width-height16px" src="../../../public/img/arrow_chevron_right.svg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="technology-list">
+                                <div class="technology-list__firstImg">
+                                    <img src="../../../public/img/image_processing20230517-1-8h5p8n.png" alt="">
+                                </div>
+                                <div class="font-size14px fontWeight600 marginTop8px">Top 10 lỗ hổng
+                                    OWASP
+                                </div>
+                                <div class="technology-list__firstDescription colorHexb8bcc6 font-size10px">
+                                    OWASP Top 10 (Top 10 lỗ hổng OWASP) là danh sách 10 rủi ro bảo mật ứng dụng web
+                                    phổ biến nhất. Bằng cách viết chương trình và thực hiện kiểm thử những lỗ hổng
+                                    này, nhà phát triển có thể tạo ra các ứng dụng an toàn giúp bảo vệ dữ liệu riêng
+                                    tư của người dùng khỏi các cuộc tấn công bảo mật. OWASP là gì? OWASP (Open Web
+                                    Application Security Project) là một tổ chức phi lợi nhuận chuyên về bảo mật
+                                    phần mềm. Các dự án liên quan đến nhiều chương trình phát triển phần mềm và bộ
+                                    công cụ code mở, các chi nhánh địa phương và hội nghị, ... Một trong số dự án đó
+                                    là OWASP Top 10, đây là danh sách 10 rủi ro bảo mật hàng đầu đối với ứng dụng
+                                    web. Tuân thủ OWASP để đảm bảo code an toàn OWASP Top 10 là nguồn tham khảo đáng
+                                    tin khi bạn đang cần phát triển code an toàn. Trong báo cáo State of Software
+                                    Security Volume 11, kết quả quét 130.000 ứng dụng đã phát hiện được gần 68% ứng
+                                    dụng có lỗi bảo mật thuộc danh sách 10 lỗ hổng OWASP. OWASP Top 10 không chỉ là
+                                    một danh sách lỗ hổng mà còn đánh giá mỗi lớp lỗ hổng bằng phương pháp OWASP
+                                    Risk Rating (Đánh giá Rủi ro OWASP) và cung cấp hướng dẫn, chẳng hạn như những
+                                    thực hành tốt nhất giúp ngăn chặn các cuộc tấn công bảo mật và tài liệu tham
+                                    khảo cho mỗi lỗ hổng. Bằng cách tìm hiểu các rủi ro bảo mật thuộc danh sách này
+                                    và học cách xử lý chúng, các nhà phát triển ứng dụng có thể tạo ra các ứng dụng
+                                    an toàn hơn giúp bảo vệ người dùng khỏi các cuộc tấn công độc hại. Hướng dẫn
+                                    kiểm thử 10 lỗ hổng OWASP Kiểm thử các lỗ hổng OWASP là một bước quan trọng
+                                    trong phát triển ứng dụng an toàn. Nếu nhìn vào số lượng lỗ hổng và các biện
+                                    pháp khắc phục, bạn có thể cảm thấy hơi choáng ngợp, tuy nhiên, bạn có thể dễ
+                                    dàng quản lý chúng bằng cách tuân thủ một số bước đơn giản sau: Tích hợp bước
+                                    bảo mật vào quy trình phát triển thay vì để nó thành bước sau cùng. Liên tục
+                                    kiểm thử chương trình dựa trên các tiêu chuẩn bảo mật trong suốt quá trình phát
+                                    triển Sử dụng tích hợp IDE và CI Pipeline để tự động hóa kiểm thử Xác định các
+                                    lỗ hổng đã được nhận diện trong code của bên thứ ba để đảm bảo chương trình
+                                    không phụ thuộc vào các phụ thuộc không an toàn. Top 10 lỗ hổng OWASP Chúng ta
+                                    sẽ phân tích các lỗ hổng dựa trên mức độ rủi ro, cách kiểm thử và biện pháp xử
+                                    lý. 1. Injection Injection (Chèn mã độc) xảy ra khi tin tặc lợi dụng lỗ hổng
+                                    trong code không an toàn để chèn code của họ vào chương trình. Bởi vì chương
+                                    trình không thể phân biệt được code được chèn theo cách này và code của chính
+                                    nó, hacker có thể sử dụng các cuộc tấn công injection để truy cập vào các lĩnh
+                                    vực bảo mật và thông tin nhạy cảm giống như người dùng được tin tưởng. Ví dụ:
+                                    chèn SQL, chèn lệnh, chèn CRLF và chèn LDAP. Kiểm thử bảo mật ứng dụng có thể
+                                    phát hiện lỗ hổng injection và đề xuất các kỹ thuật khắc phục như loại bỏ các ký
+                                    tự đặc biệt từ đầu vào của người dùng hoặc viết các truy vấn SQL có tham số. 2.
+                                    Lỗi xác thực Các cuộc gọi quản lý xác thực và quản lý phiên được triển khai
+                                    không đúng cách có thể gây ra rủi ro bảo mật lớn. Nếu kẻ tấn công phát hiện ra
+                                    các lỗ hổng này, họ có thể dễ dàng giả mạo danh tính của người dùng hợp pháp.
+                                    Xác thực đa yếu tố là một trong những biện pháp giúp giảm thiểu các vấn đề liên
+                                    quan đến lỗi xác thực. Triển khai quét DAST và SCA để phát hiện và loại bỏ các
+                                    vấn đề về lỗi triển khai trước khi code được triển khai. 3. Làm lộ thông tin
+                                    nhạy cảm API cho phép các nhà phát triển kết nối ứng dụng của mình với các dịch
+                                    vụ bên thứ ba như Google Maps, điều đó giúp tiết kiệm thời gian. Tuy nhiên, một
+                                    số API phụ thuộc vào các phương thức truyền dữ liệu không an toàn, mà qua đó kẻ
+                                    tấn công có thể khai thác để truy cập vào tên người dùng, mật khẩu và các thông
+                                    tin nhạy cảm khác. Mã hóa dữ liệu, mã hóa thông tin, quản lý chìa khóa đúng cách
+                                    và vô hiệu hóa bộ nhớ cache phản hồi có thể giúp giảm thiểu rủi ro tiết lộ thông
+                                    tin nhạy cảm. 4. XML External Entities (Các thực thể bên ngoài XML) Xảy ra khi
+                                    kẻ tấn công có thể tải lên hoặc thêm nội dung XML độc hại do code không an toàn,
+                                    tích hợp hoặc phụ thuộc. Quét SCA có thể phát hiện rủi ro từ các thành phần bên
+                                    thứ ba có lỗ hổng đã được nhận diện và đưa ra cảnh báo. Việc vô hiệu hóa xử lý
+                                    thực thể XML bên ngoài cũng giảm thiểu khả năng bị tấn công bởi thực thể XML. 5.
+                                    Lỗi kiểm soát truy cập Nếu việc xác thực và hạn chế truy cập không được triển
+                                    khai đúng cách, tin tặc có thể dễ dàng lấy được bất cứ thứ gì họ muốn. Khi có lỗ
+                                    hổng trong kiểm soát truy cập, người dùng chưa xác thực hoặc không được ủy quyền
+                                    có thể truy cập vào các file và hệ thống nhạy cảm, hoặc thậm chí là các thiết
+                                    lập đặc quyền người dùng. Lỗi cấu hình và biện pháp kiểm soát truy cập không an
+                                    toàn thường khó phát hiện bởi các quy trình tự động không thể kiểm tra được.
+                                    Kiểm thử xâm nhập có thể phát hiện các vấn đề về xác thực, nhưng phải sử dụng
+                                    thêm các phương pháp khác để xác định lỗi cấu hình. Kiểm soát truy cập yếu và
+                                    các vấn đề về quản lý thông tin đăng nhập có thể được ngăn chặn bằng các phương
+                                    pháp lập trình an toàn cùng với biện pháp phòng ngừa như khóa tài khoản và kiểm
+                                    soát quyền truy cập và sử dụng xác thực đa yếu tố. 6. Lỗi cấu hình bảo mật Giống
+                                    như lỗi kiểm soát truy cập, lỗi cấu hình bảo mật chung cho phép tin tặc dễ dàng
+                                    truy cập vào các dữ liệu nhạy cảm và trang web. Kiểm thử động có thể giúp bạn
+                                    phát hiện các lỗi cấu hình bảo mật trong ứng dụng. 7. Cross-Site Scripting Với
+                                    cross-site scripting, tin tặc tận dụng các API và thao tác DOM để lấy dữ liệu từ
+                                    ứng dụng hoặc gửi lệnh đến ứng dụng. Cross-site scripting mở rộng phạm vi tấn
+                                    công cho tin tặc, cho phép họ chiếm đoạt tài khoản người dùng, truy cập lịch sử
+                                    trình duyệt, truyền Trojans và worm, kiểm soát trình duyệt từ xa và nhiều hơn
+                                    thế nữa. Các biện pháp xử lý là mã hóa dữ liệu và xác thực đầu vào. Làm sạch dữ
+                                    liệu bằng cách xác thực nội dung cho trường đặc biệt đó và mã hóa "điểm cuối"
+                                    như một lớp bảo vệ bổ sung. 8. Deserialization không an toàn Deserialization là
+                                    quá trình chuyển đổi dữ liệu và đối tượng đã được lưu trữ vào trong đĩa hoặc lưu
+                                    trữ ở nơi khác, có thể được sử dụng để thực thi code từ xa trên ứng dụng hoặc
+                                    tạo điều kiện cho các cuộc tấn công. Đối tượng được serialize thành định dạng
+                                    cấu trúc hoặc văn bản nhị phân thông qua các hệ thống serialization phổ biến như
+                                    JSON và XML. Lỗ hổng này xảy ra khi tin tặc sử dụng dữ liệu không đáng tin cậy
+                                    để tấn công vào ứng dụng, thực hiện cuộc tấn công từ chối dịch vụ (DoS) hoặc
+                                    thực thi code không thể dự đoán để thay đổi hành vi của ứng dụng. Mặc dù tấn
+                                    công deserialization rất khó khai thác nhưng việc kiểm thử xâm nhập hoặc sử dụng
+                                    các công cụ bảo mật ứng dụng có thể giúp giảm thiểu rủi ro. Ngoài ra, chúng ta
+                                    không nên chấp nhận các đối tượng được serialize từ nguồn không đáng tin cậy và
+                                    sử dụng các phương thức chỉ cho phép kiểu dữ liệu nguyên thủy. 9. Sử dụng các
+                                    thành phần có lỗ hổng đã được nhận diện Dù code có độ bảo mật cao như thế nào,
+                                    tin tặc có thể khai thác API, phụ thuộc và các thành phần bên thứ ba khác nếu
+                                    chúng không được bảo mật. Phân tích tĩnh kết hợp với phân tích thành phần phần
+                                    mềm có thể giúp xác định và loại bỏ các thành phần không an toàn trong ứng dụng.
+                                    Công cụ phân tích code tĩnh của Veracode có thể giúp phát hiện các thành phần
+                                    không an toàn trong chương trình trước khi xuất bản ứng dụng. 10. Ghi nhật ký và
+                                    giám sát Không ghi thông tin về lỗi hoặc các cuộc tấn công và không thực hiện
+                                    giám sát chặt chẽ có thể dẫn đến các rủi ro bảo mật. Tin tặc có thể lợi dụng lỗ
+                                    hổng trong giám sát và khắc phục chậm trễ để thực hiện các cuộc tấn công trước
+                                    khi bạn có thời gian để phát hiện hoặc phản ứng. Để ngăn chặn các vấn đề về ghi
+                                    thông tin lỗi và giám sát không đầy đủ, hãy đảm bảo rằng tất cả các lỗi đăng
+                                    nhập, lỗi kiểm soát truy cập và lỗi xác thực đầu vào phía máy chủ được ghi lại
+                                    theo ngữ cảnh để bạn có thể xác định hoạt động đáng ngờ. Kiểm thử xâm nhập có
+                                    thể giúp xác định các khu vực của ứng dụng chưa ghi báo cáo đầy đủ. Ngoài ra,
+                                    việc áp dụng các biện pháp giám sát hiệu quả cũng rất quan trọng. Nếu bạn
+                                    thấy bài viết hữu ích thì hãy tiếp tục theo dõi và ủng hộ các bài
+                                    viết tiếp theo của Tek4.vn nhé!
+                                </div>
+                                <div class="technology-item">
+                                    <div class="technology-item__img">
+                                        <img src="../../../public/img/image_processing20230504-1-pbe27o.jpg" alt="">
+                                    </div>
+                                    <div class="technology-item__content">
+                                        <div class="blockAuthor displayFlex">
+                                            <div class="logo font-size10px width-height16px background-colorHexd54253">B
+                                            </div>
+                                            <span class="authorName font-size8px">Bich Huong</span>
+                                        </div>
+                                        <div>Nguyên tắc SOLID trong lập trình: Ví dụ thực tế</div>
+                                        <div class="technology-list__firstDescription">
+                                            Trong phát triển phần mềm, Thiết kế hướng đối tượng đóng một vai trò quan
+                                            trọng,
+                                            giúp code của ta linh hoạt, có khả năng mở rộng, dễ bảo trì và có thể tái sử
+                                            dụng. Thiết kế Đối tượng (OOD) đem lại rất nhiều lợi ích, nhưng mỗi lập
+                                            trình
+                                            viên cũng nên có kiến thức về nguyên tắc SOLID để có một thiết kế hướng đối
+                                            tượng tốt trong lập trình. Nguyên tắc SOLID được giới thiệu bởi Robert C.
+                                            codertin, còn được gọi là Uncle Bob và đó là một tiêu chuẩn code hóa trong
+                                            lập
+                                            trình. SOLID là viết tắt của 5 chữ cái đầu trong 5 nguyên tắc dưới đây:
+                                            Single
+                                            responsibility principle (SRP) Open/Closed principle (OCP) Liskov
+                                            substitution
+                                            principle (LSP) Interface segregation principle (ISP) Dependency inversion
+                                            principle (DIP) SOLID là Nguyên tắc thiết kế lập trình giúp giảm sự phụ
+                                            thuộc
+                                            lẫn nhau, hay nói rõ hơn là giảm sự chặt chẽ trong code. Kết hợp chặt chẽ có
+                                            nghĩa là một nhóm các lớp phụ thuộc nhiều vào nhau code bạn nên tránh trong
+                                            code
+                                            của mình. Trái với khớp nối chặt chẽ là khớp nối lỏng lẻo và mã code của bạn
+                                            được coi là tốt khi nó có các lớp được ghép nối lỏng lẻo. Các lớp được ghép
+                                            nối
+                                            lỏng lẻo sẽ giảm thiểu những thay đổi trong code của bạn, giúp làm cho code
+                                            dễ
+                                            sử dụng hơn, có thể bảo trì, linh hoạt và ổn định hơn. 1. Single
+                                            Responsibility
+                                            Principle (SRP) - Nguyên tắc đơn trách nhiệm Nguyên tắc này nói rằng "Một
+                                            lớp
+                                            nên có một và chỉ một lý do để thay đổi.", có nghĩa là mỗi lớp nên có một
+                                            trách
+                                            nhiệm duy nhất hoặc một mục đích duy nhất. Ví dụ, khi phát triển phần mềm,
+                                            nhiệm
+                                            vụ được chia cho các thành viên khác nhau , xử lý những đầu việc khác nhau,
+                                            như
+                                            lập trình viên front-end thực hiện thiết kế, tester thực hiện kiểm thử và
+                                            lập
+                                            trình viên backend chịu trách nhiệm cho phần phát triển back-end. Nhìn chung
+                                            mỗi
+                                            người đảm nhận một công việc riêng. Thường thì các lập trình viên khi thêm
+                                            tính
+                                            năng hoặc hành vi mới, họ thực hiện tất cả mọi thứ vào lớp hiện có. Điều này
+                                            hoàn toàn sai, khiến code dài, phức tạp và tốn thời gian khi sửa đổi. Vì
+                                            thế,
+                                            bạn nên sử dụng các lớp trong ứng dụng và chia các lớp quá lớn thành các lớp
+                                            hoặc module nhỏ hơn. 2. Open/Closed Principle: Nguyên tắc đóng/mở Nguyên tắc
+                                            này
+                                            nói rằng "các thực thể phần mềm (lớp, module, hàm, v.v.) phải mở cho mở
+                                            rộng,
+                                            nhưng đóng để sửa đổi", có nghĩa là bạn nên có thể mở rộng hành vi của một
+                                            lớp
+                                            code không cần sửa đổi nó. Giả sử lập trình viên A cần phát hành một bản cập
+                                            nhật cho một thư viện hoặc framework và lập trình viên B muốn thực hiện một
+                                            số
+                                            sửa đổi hoặc thêm tính năng vào đó, lập trình viên B được phép mở rộng lớp
+                                            hiện
+                                            có được tạo bởi lập trình viên A nhưng không được sửa đổi lớp trực tiếp.
+                                            Nguyên
+                                            tắc này tách biệt code hiện có và code được sửa đổi nên nó cung cấp độ ổn
+                                            định,
+                                            dễ bảo trì và giảm thiểu sự thay đổi trong code của bạn. 3. Liskov’s
+                                            Substitution Principle: Nguyên tắc thay thế Liskov Nguyên tắc này được giới
+                                            thiệu bởi Barbara Liskov vào năm 1987 và theo nguyên tắc này "các lớp dẫn
+                                            xuất
+                                            hoặc lớp con phải có thể thay thế cho lớp cơ sở hoặc lớp cha của chúng".
+                                            Nguyên
+                                            tắc này đảm bảo rằng bất kỳ lớp con nào của một lớp cha đều có thể sử dụng
+                                            thay
+                                            cho lớp cha của nó code không gặp bất kỳ khó khăn nào. Ví dụ bạn là con trai
+                                            của
+                                            một người nông dân và bạn cũng thừa kế việc đồng áng của gia đình mình. Khi
+                                            cha
+                                            bạn không thể làm việc, thì bạn sẽ sẵn sàng thay thế cha mình nếu cần thiết.
+                                            Nhưng giả sử con trai của người nông dân ấy muốn trở thành cầu thủ bóng đá
+                                            thì
+                                            chắc chắn người con trai không thể thay thế cha mình mặc dù gia đình có
+                                            truyền
+                                            thống làm nông. Một trong những ví dụ lâu đời của nguyên tắc này là hình chữ
+                                            nhật có bốn cạnh. Chiều cao và chiều rộng của một hình chữ nhật có thể là
+                                            bất kỳ
+                                            giá trị nào. Một hình vuông là một hình chữ nhật với chiều rộng và chiều cao
+                                            bằng nhau. Vì vậy, chúng ta có thể mở rộng các thuộc tính của lớp hình chữ
+                                            nhật
+                                            thành lớp hình vuông. Để làm được điều đó, bạn cần thay thế lớp con (hình
+                                            vuông)
+                                            bằng lớp cha (hình chữ nhật) để phù hợp với định nghĩa của một hình vuông có
+                                            bốn
+                                            cạnh bằng nhau, nhưng một lớp dẫn xuất không ảnh hưởng đến hành vi của lớp
+                                            cha.
+                                            Vì nếu bạn làm như vậy, điều đó sẽ vi phạm Nguyên tắc thay thế Liskov. 4.
+                                            Interface Segregation Principle: Nguyên tắc phân tách giao diện Nguyên tắc
+                                            này
+                                            là nguyên tắc đầu tiên áp dụng cho các giao diện chứ không phải các lớp
+                                            trong
+                                            SOLID và nó tương tự như nguyên tắc đơn trách nhiệm. Nguyên tắc này nói rằng
+                                            "không ép buộc bất kỳ khách hàng nào phải cài đặt một giao diện code không
+                                            liên
+                                            quan đến họ". Ở đây, mục tiêu chính của bạn là tập trung vào việc tránh các
+                                            giao
+                                            diện quá to và ưu tiên các giao diện nhỏ phù hợp với khách hàng cụ thể. Bạn
+                                            nên
+                                            ưu tiên nhiều giao diện khách hàng hơn là một giao diện chung và mỗi giao
+                                            diện
+                                            nên có một nhiệm vụ cụ thể. Giả sử bạn là một người ăn chay, và có dịp đi ăn
+                                            tại
+                                            nhà hàng. Người phục vụ đưa cho bạn menu bao gồm các món ăn chay, mặn, đồ
+                                            uống
+                                            và mứt ngọt. Trong trường hợp này, nếu bạn là khách hàng, bạn nên yêu cầu
+                                            một
+                                            thực đơn chỉ có các món chay, chứ không phải những thứ mà bạn không muốn ăn.
+                                            Ở
+                                            đây, menu nên khác nhau đối với các loại khách hàng khác nhau. Thẻ menu
+                                            chung
+                                            cho mọi người nên chia thành nhiều thẻ. Nguyên tắc này giúp giảm thiểu các
+                                            tác
+                                            động phụ và tần suất sửa đổi. 5. Dependency Inversion Principle: Nguyên tắc
+                                            đảo
+                                            ngược sự phụ thuộc Trước khi chúng ta thảo luận về chủ đề này, hãy nhớ rằng
+                                            Nguyên tắc đảo ngược sự phụ thuộc và Dependency Injection là hai khái niệm
+                                            khác
+                                            nhau. Hầu hết mọi người bị nhầm lẫn và cho rằng cả hai giống nhau. Nguyên
+                                            tắc
+                                            này có hai điểm chính như sau: Các module / lớp cấp cao không nên phụ thuộc
+                                            vào
+                                            các module / lớp cấp thấp. Cả hai nên phụ thuộc vào các abstraction. Các
+                                            abstraction không nên phụ thuộc vào chi tiết. Chi tiết nên phụ thuộc vào các
+                                            abstraction. Những dòng trên đơn giản chỉ nói rằng nếu một module hoặc lớp
+                                            cấp
+                                            cao phụ thuộc nhiều vào các module hoặc lớp cấp thấp thì code của bạn sẽ có
+                                            sự
+                                            liên kết chặt chẽ và nếu bạn cố gắng thay đổi một lớp thì nó có thể làm hỏng
+                                            một
+                                            lớp khác, đây là rủi ro lớn ở cấp độ sản xuất. Vì vậy, hãy cố gắng làm cho
+                                            các
+                                            lớp được kết nối chặt chẽ ít nhất có thể và bạn có thể đạt được điều này
+                                            thông
+                                            qua abstraction. Mục đích chính của nguyên tắc này là giải phóng các phụ
+                                            thuộc,
+                                            vì vậy nếu lớp A thay đổi thì lớp B không cần quan tâm hoặc biết về những
+                                            thay
+                                            đổi đó. Chúng ta có thể dùng pin ở điều khiển TV làm ví dụ. Điều khiển cần
+                                            một
+                                            viên pin nhưng thương hiệu của viên pin thì không quan trọng. Bạn có thể sử
+                                            dụng
+                                            bất kỳ thương hiệu XYZ nào bạn muốn và điều khiển vẫn hoạt động bình thường.
+                                            Như
+                                            vậy, điều khiển TV được kết nối lỏng lẻo với tên thương hiệu. Nguyên tắc Đảo
+                                            ngược sự phụ thuộc giúp code của bạn dễ tái sử dụng hơn. Nếu bạn thấy
+                                            bài
+                                            viết hữu ích thì hãy tiếp tục theo dõi và ủng hộ các bài viết
+                                            tiếp theo của Tek4.vn nhé!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Technology -->
                     </div>
                     <!-- End Content-right -->
                 </div>
