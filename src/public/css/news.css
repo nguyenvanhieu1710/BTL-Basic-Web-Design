@@ -262,6 +262,7 @@
 
 .famousTopics__heading-text {
   margin-left: 0;
+  border-bottom: 0.25rem solid #191c26;
 }
 
 .famousTopics__topic-list {
@@ -419,6 +420,8 @@
   border: 1px solid #3f5765;
   padding: 25px;
   border-radius: 8px;
+  /* chiều cao bằng nội dung thôi */
+  height: max-content;
 }
 
 .famousTagList {
@@ -520,14 +523,6 @@
 }
 
 .technology-list__firstDescription {
-  display: -webkit-box;
-  /* giới hạn số dòng */
-  -webkit-line-clamp: 5;
-  overflow: hidden;
-  /* theo chiều dọc */
-  -webkit-box-orient: vertical;
-  /* ngắt dòng ...  */
-  word-break: break-word;
   line-height: 16px;
   margin-top: 14px;
   margin-bottom: 10px;
@@ -539,16 +534,23 @@
 
 .technology-item .technology-item__img {
   flex: 1;
+  display: flex;
+  align-items: center;
 }
 
 .technology-item .technology-item__img img {
   width: 77px;
   height: 52px;
   object-fit: cover;
+  border-radius: 3px;
 }
 
 .technology-item .technology-item__content {
   flex: 3;
+}
+
+.technology-item__content .blockAuthor {
+  margin: 5px 0;
 }
 
 .technology-item__content .blockAuthor .logo {
@@ -560,4 +562,9 @@
 .technology-item__content .blockAuthor .authorName {
   line-height: 16px;
   margin-left: 5px;
+}
+
+.technology__descriptionUnderTitle {
+  margin-top: 4px;
+  margin-bottom: 9px;
 }

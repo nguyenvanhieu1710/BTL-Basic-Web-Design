@@ -153,6 +153,10 @@ a {
   margin: 30px 0 50px 0;
 }
 
+.margin-left0px {
+  margin-left: 0px !important;
+}
+
 .margin-left60px {
   margin-left: 60px;
 }
@@ -375,6 +379,44 @@ a {
 
 .text-alignCenter {
   text-align: center;
+}
+
+.textOn1Line,
+.textOn2Line,
+.textOn3Line,
+.textOn4Line,
+.textOn5Line {
+  display: -webkit-box;
+  overflow: hidden;
+  /* theo chiều dọc */
+  -webkit-box-orient: vertical;
+  /* ngắt dòng ...  */
+  word-break: break-word;
+}
+
+.textOn1Line {
+  /* giới hạn số dòng */
+  -webkit-line-clamp: 1;
+}
+
+.textOn2Line {
+  /* giới hạn số dòng */
+  -webkit-line-clamp: 2;
+}
+
+.textOn3Line {
+  /* giới hạn số dòng */
+  -webkit-line-clamp: 3;
+}
+
+.textOn4Line {
+  /* giới hạn số dòng */
+  -webkit-line-clamp: 4;
+}
+
+.textOn5Line {
+  /* giới hạn số dòng */
+  -webkit-line-clamp: 5;
 }
 
 .center {
