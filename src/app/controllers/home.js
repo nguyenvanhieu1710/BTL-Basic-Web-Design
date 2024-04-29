@@ -14,6 +14,10 @@ header__blockSearch_logoSearch.onclick = function () {
   blockSearch.classList.remove("displayNone");
 };
 
+header__blockSearch_logoSearch.addEventListener("click", () => {
+  blockSearch.classList.remove("displayNone");
+});
+
 search__imgClose.onclick = function () {
   blockSearch.classList.add("displayNone");
 };
@@ -59,6 +63,7 @@ function removeClass(text) {
   text.classList.remove("displayNone");
 }
 
+// Part chuyển đổi ảnh ở home
 let products__food = document.getElementById("products__food");
 let products__robot = document.getElementById("products__robot");
 let products__clothes = document.getElementById("products__clothes");
