@@ -55,7 +55,7 @@
                     học hỏi
                     kiến thức từ các khóa học hoàn toàn miễn phí và được thiết kế công phu bởi TEK4.VN
                 </div>
-                <div class="row1 displayFlex">
+                <div class="row1 displayFlex justify-content-space-around">
                     <div class="column course__cloumn1">
                         <img class="tagBasic" src="../../../public/img/tag-basic.svg" alt="Basic">
                         <div class="blockCourse">
@@ -83,8 +83,8 @@
                                 <div>259 <span class="colorHexb8bcc6">bài học</span></div>
                                 <div>Độ khó: <span class="colorHexb8bcc6">Dễ</span></div>
                                 <div class="colorHex1e90ff">Nghề nghiệp</div>
-                                <div class="course__descriptionDetailCourse-line"></div>
-                                <div class="course__blockBtnStudyNow ">
+                                <div class="course__descriptionDetailCourse-line marginRight40px"></div>
+                                <div class="course__blockBtnStudyNow paddingRight40px">
                                     <div><i class="fa-solid fa-heart"></i></div>
                                     <button class="course__btnStudyNow btn background-colorHexd54253">
                                         <span>Học ngay</span>
@@ -120,8 +120,8 @@
                                 <div>245 <span class="colorHexb8bcc6">bài học</span></div>
                                 <div>Độ khó: <span class="colorHexb8bcc6">Dễ</span></div>
                                 <div class="colorHex1e90ff">Nghề nghiệp</div>
-                                <div class="course__descriptionDetailCourse-line"></div>
-                                <div class="course__blockBtnStudyNow">
+                                <div class="course__descriptionDetailCourse-line marginRight40px"></div>
+                                <div class="course__blockBtnStudyNow paddingRight40px">
                                     <div><i class="fa-solid fa-heart"></i></div>
                                     <button class="course__btnStudyNow btn background-colorHexd54253">
                                         <span>Học ngay</span>
@@ -158,8 +158,8 @@
                                 <div>2346 <span class="colorHexb8bcc6">bài học</span></div>
                                 <div>Độ khó: <span class="colorHexb8bcc6">Trung bình</span></div>
                                 <div class="colorHex1e90ff">Nghề nghiệp</div>
-                                <div class="course__descriptionDetailCourse-line"></div>
-                                <div class="course__blockBtnStudyNow">
+                                <div class="course__descriptionDetailCourse-line marginRight40px"></div>
+                                <div class="course__blockBtnStudyNow paddingRight40px">
                                     <div><i class="fa-solid fa-heart"></i></div>
                                     <button class="course__btnStudyNow btn background-colorHexd54253">
                                         <span>Học ngay</span>
@@ -169,7 +169,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="course__blockRow2 row2 displayFlex">
+                <div class="course__blockRow2 row2 displayFlex justify-content-space-around">
                     <div class="column course__cloumn1">
                         <img class="tagBasic" src="../../../public/img/tag-basic.svg" alt="Basic">
                         <div class="blockCourse">
@@ -198,8 +198,8 @@
                                 <div>304 <span class="colorHexb8bcc6">bài học</span></div>
                                 <div>Độ khó: <span class="colorHexb8bcc6">Trung bình</span></div>
                                 <div class="colorHex1e90ff">Nghề nghiệp</div>
-                                <div class="course__descriptionDetailCourse-line"></div>
-                                <div class="course__blockBtnStudyNow ">
+                                <div class="course__descriptionDetailCourse-line marginRight40px"></div>
+                                <div class="course__blockBtnStudyNow paddingRight40px">
                                     <div><i class="fa-solid fa-heart"></i></div>
                                     <button class="course__btnStudyNow btn background-colorHexd54253">
                                         <span>Học ngay</span>
@@ -236,8 +236,8 @@
                                 <div>309 <span class="colorHexb8bcc6">bài học</span></div>
                                 <div>Độ khó: <span class="colorHexb8bcc6">Dễ</span></div>
                                 <div class="colorHex1e90ff">Nghề nghiệp</div>
-                                <div class="course__descriptionDetailCourse-line"></div>
-                                <div class="course__blockBtnStudyNow">
+                                <div class="course__descriptionDetailCourse-line marginRight40px"></div>
+                                <div class="course__blockBtnStudyNow paddingRight40px">
                                     <div><i class="fa-solid fa-heart"></i></div>
                                     <button class="course__btnStudyNow btn background-colorHexd54253">
                                         <span>Học ngay</span>
@@ -273,8 +273,8 @@
                                 <div>227 <span class="colorHexb8bcc6">bài học</span></div>
                                 <div>Độ khó: <span class="colorHexb8bcc6">Dễ</span></div>
                                 <div class="colorHex1e90ff">Nghề nghiệp</div>
-                                <div class="course__descriptionDetailCourse-line"></div>
-                                <div class="course__blockBtnStudyNow">
+                                <div class="course__descriptionDetailCourse-line marginRight40px"></div>
+                                <div class="course__blockBtnStudyNow paddingRight40px">
                                     <div><i class="fa-solid fa-heart"></i></div>
                                     <button class="course__btnStudyNow btn background-colorHexd54253">
                                         <span>Học ngay</span>
@@ -657,12 +657,13 @@
         import navigation from "../partials/navigation.js";
         const headerTag = document.querySelector("header");
         headerTag.innerHTML = navigation();
+        headerTag.querySelector("nav").classList.add("background-colorHex111319");
 
         import footer from "../partials/footer.js";
         const footerTag = document.querySelector("footer");
         footerTag.outerHTML = footer();
     </script>
-    <script defer src="../../../app/controllers/home.js"></script>
+    <script defer src="../../../controllers/home.js"></script>
 </body>
 
 </html>

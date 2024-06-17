@@ -2,7 +2,7 @@ const navigation = () => {
   return `<nav>
         <div class="row displayFlex">
             <div class="column column-1 FlexAlign-itemsCenter">
-                <a href="" class="header__logoTek4">
+                <a href="home.html" class="header__logoTek4">
                     <img src="../../../public/img/logo.webp" alt="Logo Tek4">
                 </a>
                 <div class="header__blockSearch FlexAlign-itemsCenter" id="header__blockSearch">
@@ -28,7 +28,7 @@ const navigation = () => {
                     <img class="logoImage" id="header__iconMenu" src="../../../public/img/menu.svg" alt="Menu">
                 </label>
                 <div class="header__textMenu displayNone" id="header__textMenu">Menu</div>
-                <a href="#" class="header__loginAndRegister">
+                <a href="login.html" class="header__loginAndRegister">
                     <span>Đăng nhập/Đăng ký</span>
                 </a>
             </div>

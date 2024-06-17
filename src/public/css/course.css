@@ -1,0 +1,398 @@
+.banner-course {
+  background-color: #12141d;
+  padding: 2rem 1rem 3rem;
+  margin-top: 1rem;
+}
+
+.banner-course__left {
+  flex-grow: 2;
+}
+
+.banner-course__right {
+  flex-grow: 1;
+}
+
+.course-name {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #fff;
+  word-break: break-word;
+}
+
+.starAndHeart {
+  align-items: center;
+}
+
+.rate {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.description__btnStartNow,
+.course__btnSeeAll {
+  height: 3.5rem;
+  padding: 0 3.5rem;
+  font-size: 16px;
+  font-weight: 300;
+  border: 2px solid #d54253;
+}
+
+.description__btnStartNow {
+  margin-right: 5px;
+}
+
+.circle {
+  width: 275px;
+  height: 275px;
+  border: 23px solid white;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.point {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  white-space: normal;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 2rem !important;
+}
+
+img {
+  display: inline !important;
+  vertical-align: baseline !important;
+}
+
+.infoCourse__content {
+  flex-grow: 2;
+}
+
+.infoCourse__content h2:first-child {
+  margin-bottom: 0;
+}
+
+.introduction {
+  color: #e1e4eb;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.introduction::before {
+  position: absolute;
+  z-index: 10;
+  content: "";
+  width: 100%;
+  height: 8rem;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(14, 15, 20, 0), #111318);
+  z-index: 100;
+}
+
+.introduction.hide-before::before {
+  display: none;
+}
+
+.introduction h2 {
+  font-size: 24px;
+  padding: 0;
+  border: none;
+  font-weight: 700;
+  margin: 24px 0;
+  line-height: 1.7;
+}
+
+.introduction p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 8px 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.introduction ul {
+  list-style: disc;
+  line-height: 28px;
+  padding-left: 36px;
+}
+
+.introduction ul:last-child {
+  list-style: circle;
+}
+
+.introduction li {
+  margin-bottom: 8px;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.zoom-out {
+  position: relative;
+  z-index: 11;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.zoom-out span {
+  text-decoration: underline;
+}
+
+.seeMore {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0;
+  z-index: 101;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.btnSeeMore {
+  background-color: transparent;
+  border-radius: 5px;
+  color: #d54253;
+  height: 3.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 1rem;
+  width: 100%;
+  border: none;
+}
+
+.btnSeeMore:hover span {
+  text-decoration: underline;
+}
+
+.infoCourse__certifilcate {
+  flex-grow: 1;
+}
+
+.certifilcate {
+  width: 371px;
+  height: 308.317px;
+  position: relative;
+}
+
+.qrcode {
+  position: absolute;
+  top: clamp(1rem, 2.7% + 1rem, 2.44rem);
+  right: clamp(1.4rem, 3.8% + 1rem, 3rem);
+  width: 2.7rem;
+  height: 2.7rem;
+}
+
+.logo {
+  position: absolute;
+  width: 2.6rem;
+  height: 2.6rem;
+  top: 8px;
+  right: 172px;
+}
+
+.text {
+  position: absolute;
+  top: 52px;
+  right: 152px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: Lora, serif;
+  color: #d54253;
+  width: max-content;
+}
+
+.userName {
+  position: absolute;
+  top: 99px;
+  right: 157px;
+  font-family: "Great Vibes", cursive;
+  font-size: 1.5rem;
+  color: #d54253;
+  line-height: normal;
+}
+
+.certificate-name {
+  position: absolute;
+  top: 140px;
+  right: 102px;
+  font-size: 0.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  color: #d54253;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.detailed-specifications {
+  position: absolute;
+  left: 43px;
+  bottom: 65px;
+}
+
+.logo-certificate img {
+  position: absolute;
+  bottom: 50px;
+  right: 33px;
+  width: 4rem;
+  height: 3.3rem;
+}
+
+.textEnd {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+.textSmall {
+  color: #181c27;
+  font-size: 0.375rem;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0.38rem;
+}
+
+.see-certifilcate button {
+  width: 100%;
+  opacity: 0.5;
+}
+
+.chapters {
+  width: 66.5%;
+  margin-top: 6rem;
+}
+
+.chapter-item {
+  background: #111319;
+  border: 1px solid #777682;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  padding: 4em 1.5rem 2rem;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.icon-folder {
+  padding: 1.5rem;
+  background: #111319;
+  position: absolute;
+  top: -3rem;
+  left: 3rem;
+  border-radius: 50%;
+}
+
+.icon-arrow-up {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.chapter-item h2,
+.comment h2:first-child {
+  margin-bottom: 60px;
+  line-height: 1.35;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.item-content div.text-xl {
+  margin-bottom: 24px;
+}
+
+.item-content span:hover {
+  color: #d54253;
+  cursor: pointer;
+}
+
+.btnDetail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  box-shadow: none;
+  border-radius: 5px;
+  color: #fff;
+  border: 2px solid #fafbfc;
+  height: 3.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  width: 100%;
+  font-size: 1.125rem;
+}
+
+.related-courses {
+  margin-top: 120px;
+  overflow: hidden;
+}
+
+.related-courses h2 {
+  font-size: 2.25rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.courses {
+  padding: 0 16px;
+  gap: 38px;
+  /* overflow: hidden; */
+}
+
+.blockCourse {
+  width: 400px;
+  height: 100%;
+  padding: 1.5rem 1rem;
+  background-color: #111319;
+  border: 1px solid #3d4048;
+  border-radius: 0.5rem;
+}
+
+.course__descriptionDetailCourse {
+  width: 100%;
+  margin-left: 0;
+}
+
+.course__blockBtnStudyNow {
+  justify-content: end;
+}
+
+.course__btnStudyNow {
+  padding: 0.5rem 1.25rem;
+  font-size: 0.875rem;
+}
+
+.comment h2:first-child {
+  margin-top: 55px;
+  margin-bottom: 30px;
+}
+
+.moveBlock {
+  animation: moveBlock 3s ease-out infinite;
+}
+
+@keyframes moveBlock {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-450px);
+  }
+}

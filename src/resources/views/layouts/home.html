@@ -621,7 +621,7 @@
         </div>
     </aside>
     <footer class="background-colorHex111319">
-        <div class="row paddingTopBottom2rem">
+        <div class="row paddingTopBottom2rem footer__child">
             <div class="displayFlex footer__blocktitle1">
                 <div class="column width715px">
                     <div><img class="footer__imgLogoTek4" src="../../../public/img/logo-2.webp" alt="Logo"></div>
@@ -689,8 +689,10 @@
         import navigation from "../partials/navigation.js";
         const navTag = document.querySelector("nav");
         navTag.outerHTML = navigation();
+        const headerTag = document.querySelector("header");
+        headerTag.querySelector("nav").classList.add("background-colorHex111319");
     </script>
-    <script defer src="../../../app/controllers/home.js"></script>
+    <script defer src="../../../controllers/home.js"></script>
 </body>
 
 </html>

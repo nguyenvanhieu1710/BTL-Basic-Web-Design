@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEK4.VN - Cộng đồng công nghệ cho người Việt</title>
     <link rel="shortcut icon" href="../../../public/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- <link rel="stylesheet" href="../../../public/vendor/bootstrap/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="../../../public/css/all.css">
     <link rel="stylesheet" href="../../../public/css/login.css">
 </head>
@@ -16,6 +18,10 @@
             <h1 class="title">Đăng nhập <span class="colorHexd54253">TEK4.VN</span></h1>
             <h3 class="description">HỌC TẬP - LUYỆN TẬP - CHIA SẺ - KẾT NỐI - MỞ RA CƠ HỘI NGHỀ NGHIỆP VÀ HƠN THẾ NỮA
             </h3>
+            <div class="errorBlock input-box d-None">
+                <span class="iconError"><i class="fa-regular fa-circle-xmark colorHexd54253"></i></span>
+                <span id="textError"></span>
+            </div>
             <div class="email input-box" id="blockEmail">
                 <img src="../../../public/img/userPrefix.e910c8576dc7245f624fe9f316667ee2.svg" alt="User">
                 <input class="inputEmail" id="inputEmail" type="text" aria-label="ok" placeholder="Nhập email">
@@ -28,7 +34,7 @@
             <div class="forgetPassword ">
                 <a href="#" id="forgetPassword" class="colorHexd54253">Quên mật khẩu</a>
             </div>
-            <div class="btnLogin">
+            <div class="btnLogin" id="btnLogin">
                 <span>Đăng nhập</span>
             </div>
             <div class="orLoginBy displayFlexCenter">Hoặc đăng nhập bằng</div>
@@ -71,55 +77,8 @@
         </form>
     </div>
 
-    <script>
-        var blockEmail = document.getElementById("blockEmail");
-        var blockPassword = document.getElementById("blockPassword");
-        var inputEmail = document.getElementById("inputEmail");
-        var inputPassword = document.getElementById("inputPassword");
-        inputEmail.onclick = function () {
-            blockEmail.classList.add("input-boxClick");
-        };
-        inputEmail.onblur = function () {
-            blockEmail.classList.remove("input-boxClick");
-        };
-        inputPassword.onclick = function () {
-            blockPassword.classList.add("input-boxClick");
-        };
-        inputPassword.onblur = function () {
-            blockPassword.classList.remove("input-boxClick");
-        };
-
-        var eye = document.getElementById("eye");
-        eye.onclick = function () {
-            // Kiểm tra trạng thái hiện tại của ảnh
-            // Sử dụng includes() để kiểm tra xem src của ảnh có chứa chuỗi eye-open hay không.
-            const checkStatus = eye.src.includes('eye-open');
-
-            // Thay đổi src của ảnh dựa trên trạng thái hiện tại
-            // Nếu ảnh đang mở (src chứa eye-open), thay đổi src sang ảnh "đóng".
-            // Nếu ảnh đang đóng (src không chứa eye-open), thay đổi src sang ảnh "mở".
-            eye.src = checkStatus ?
-                '../../../public/img/eye-close.eeb5c682705197501f00fd8c4ca3444e.svg' :
-                '../../../public/img/eye-open.acd9355b68364f2c49674e40717030b4.svg';
-        };
-
-        var forgetPassword = document.getElementById("forgetPassword");
-        forgetPassword.onclick = function () {
-            let frameMain = document.getElementById("frameMain");
-            frameMain.classList.add("displayNone");
-            let frameForgetPassword = document.getElementById("frameForgetPassword");
-            frameForgetPassword.classList.remove("displayNone");
-        };
-
-        var inputEmailOrUserName = document.getElementById("inputEmailOrUserName");
-        var blockInputEmailOrUserName = document.getElementById("blockInputEmailOrUserName");
-        inputEmailOrUserName.onclick = function () {
-            blockInputEmailOrUserName.classList.add("input-boxClick");
-        };
-        inputEmailOrUserName.onblur = function () {
-            blockInputEmailOrUserName.classList.remove("input-boxClick");
-        };
-    </script>
+    <script src="../../../public/vendor/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../../controllers/login.js"></script>
 </body>
 
 </html>

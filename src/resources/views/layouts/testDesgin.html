@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet" />
+    <style>
+        #container {
+            position: relative;
+            width: 500px;
+            height: 200px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        #editing {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            color: transparent;
+            caret-color: black;
+            border: none;
+            padding: 0;
+            overflow: auto;
+        }
+
+        #highlighting {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            padding: 0;
+            overflow: auto;
+        }
+
+        #highlighting-content {
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <textarea aria-label="Editor" id="editing" oninput="update(this.value);"
+            onscroll="syncScroll(this);"></textarea>
+        <pre id="highlighting" aria-hidden="true">
+            <code class="language-python" id="highlighting-content"></code>
+        </pre>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
+    <script>
+        function update(text) {
+            let result_element = document.querySelector("#highlighting-content");
+            result_element.textContent = text;
+            Prism.highlightElement(result_element);
+        }
+        function syncScroll(element) {
+            let highlighting = document.querySelector("#highlighting");
+            highlighting.scrollTop = element.scrollTop;
+        }
+    </script>
+</body>
+
+</html>

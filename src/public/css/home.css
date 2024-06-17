@@ -2,7 +2,7 @@
 
 nav {
   position: fixed;
-  /* top: 0; */
+  top: 0;
   width: 100%;
   padding: 20px 0;
   background-color: #191c26;
@@ -31,6 +31,7 @@ nav {
   font-family: Inter;
   font-size: 14px;
   color: #868991;
+  outline: none;
 }
 
 .search {
@@ -671,6 +672,10 @@ nav {
   font-size: 1.15rem;
   font-weight: 700;
   margin-top: 1.5rem;
+}
+
+.footer__child {
+  padding: 0px 46px;
 }
 
 .footer__blocktitle1 {

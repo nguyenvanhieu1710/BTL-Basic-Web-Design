@@ -1,6 +1,6 @@
 .navLeft {
   position: fixed;
-  top: 5.3rem;
+  top: 5.2rem;
   left: 0;
   color: #fff;
   text-align: center;
@@ -63,10 +63,16 @@
   position: relative; */
 }
 
+.course__cloumn1,
+.course__cloumn2,
+.course__cloumn3 {
+  position: relative;
+}
+
 .tagBasic {
   position: absolute;
   top: 1rem;
-  right: 11px;
+  right: -4px;
   z-index: 1;
 }
 
