@@ -7,8 +7,19 @@ $(document).ready(function () {
 
   const validate = () => {
     const $result = $("#textError");
-    const email = $("#inputEmail").val();
+    const email = $("#inputEmail").val().trim();
+    const password = $("#inputPassword").val().trim();
     $result.text("");
+
+    // check empty
+    if (email === "" || password === "") {
+      $(".errorBlock").removeClass("d-None");
+      $result.text("Please enter enough information. ");
+      return false;
+    } else {
+      $(".errorBlock").addClass("d-None");
+      $result.text("");
+    }
 
     if (validateEmail(email)) {
       // valid email
@@ -17,11 +28,26 @@ $(document).ready(function () {
       // invalid email
       $(".errorBlock").removeClass("d-None");
       $result.text("Invalid username or password.");
+      return false;
     }
-    return false;
+    return true;
   };
 
-  $("#btnLogin").on("click", validate);
+  // handle click on button login
+  $("#btnLogin").on("click", function (e) {
+    if (validate() === false) {
+      alert("validate false");
+      e.preventDefault();
+      return;
+    }
+    var email = window.localStorage.getItem(inputEmail.value);
+    if (!email || inputPassword.value !== email) {
+      alert("Tài khoản hoặc mật khẩu không tồn tại");
+      e.preventDefault();
+      return;
+    }
+    alert("Đăng nhập thành công");
+  });
 });
 
 var blockEmail = document.getElementById("blockEmail");
@@ -43,10 +69,14 @@ inputPassword.onblur = function () {
 };
 
 var eye = document.getElementById("eye");
+var passwordInput = document.getElementById("inputPassword");
 eye.onclick = function () {
   // Kiểm tra trạng thái hiện tại của ảnh
   // Sử dụng includes() để kiểm tra xem src của ảnh có chứa chuỗi eye-open hay không.
   const checkStatus = eye.src.includes("eye-open");
+
+  // Thay đổi kiểu hiển thị của trường nhập mật khẩu
+  passwordInput.type = checkStatus ? "password" : "text";
 
   // Thay đổi src của ảnh dựa trên trạng thái hiện tại
   // Nếu ảnh đang mở (src chứa eye-open), thay đổi src sang ảnh "đóng".
