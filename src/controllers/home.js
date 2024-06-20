@@ -63,54 +63,122 @@ function removeClass(text) {
   text.classList.remove("displayNone");
 }
 
-// Part chuyển đổi ảnh ở home
-let products__food = document.getElementById("products__food");
-let products__robot = document.getElementById("products__robot");
-let products__clothes = document.getElementById("products__clothes");
-let products__mouse = document.getElementById("products__mouse");
-let products__laptop = document.getElementById("products__laptop");
-let products__phone = document.getElementById("products__phone");
-let products__book = document.getElementById("products__book");
-let btn_nextLeft = document.getElementById("products__btnNextLeft");
-let btn_nextRight = document.getElementById("products__btnNextRight");
+// Part transform courses
+let btnNextLeft = document.querySelector(".course__btnNextLeft");
+let btnNextRight = document.querySelector(".course__btnNextRight");
 
-let array = [
-  products__food,
-  products__robot,
-  products__clothes,
-  products__mouse,
-  products__laptop,
-  products__phone,
-  products__book,
-];
+btnNextLeft.onclick = function () {
+  handleTransformCourses("left");
+};
+btnNextRight.onclick = function () {
+  handleTransformCourses("right");
+};
 
-let i = 0;
-function loop() {
-  // Thêm class 'displayNone' vào phần tử hiện tại
-  array[i % array.length].classList.add("displayNone");
+var courses__blockChild = document.querySelector(".courses__blockChild"); // khối cha
+var course = $(".courses__course"); // danh sách các khối con
+var j = 0;
+function handleTransformCourses(direction) {
+  // nếu hướng là trái
+  if (direction == "left") {
+    courses__blockChild.classList.add("transform-courses-left");
+    setTimeout(() => {
+      // Xóa khối con
+      $(course[j]).addClass("displayNone");
 
-  // Loại bỏ class 'displayNone' khỏi phần tử i + 3
-  array[(i + 3) % array.length].classList.remove("displayNone");
+      // Thêm khối con hiện tại vào cuối danh sách khối cha
+      $(course[j])
+        .remove()
+        .appendTo(courses__blockChild)
+        .removeClass("displayNone");
 
-  i++;
+      // Tính toán chỉ số cho khối tiếp theo
+      j = (j + 1) % course.length;
+
+      // delete effect in block dad
+      courses__blockChild.classList.remove("transform-courses-left");
+    }, 3000);
+  } else if (direction == "right") {
+    courses__blockChild.classList.add("transform-courses-right");
+    courses__blockChild.classList.add("flex-row-reverse");
+    setTimeout(() => {
+      // Xóa khối con
+      $(course[j]).addClass("displayNone");
+
+      // Thêm khối con hiện tại vào cuối danh sách khối cha
+      $(course[j])
+        .remove()
+        .appendTo(courses__blockChild)
+        .removeClass("displayNone");
+
+      // Tính toán chỉ số cho khối tiếp theo
+      j = (j + 1) % course.length;
+
+      // delete effect in block dad
+      courses__blockChild.classList.remove("transform-courses-right");
+    }, 3000);
+  }
 }
 
-let interval = setInterval(loop, 5000);
+// Part chuyển đổi ảnh sản phẩm
+var idInterval;
+idInterval = setInterval(() => {
+  handleTransformProduct("left");
+}, 3000);
+$("#products").hover(
+  function () {
+    clearInterval(idInterval);
+  },
+  function () {
+    idInterval = setInterval(() => {
+      handleTransformProduct("left");
+    }, 3000);
+  }
+);
 
-array.forEach((id) => {
-  id.onmouseover = function () {
-    clearInterval(interval);
-  };
-  id.onmouseout = function () {
-    interval = setInterval(loop, 5000);
-  };
-});
-
+let btn_nextLeft = document.getElementById("products__btnNextLeft");
+let btn_nextRight = document.getElementById("products__btnNextRight");
 btn_nextLeft.onclick = function () {
-  clearInterval(interval);
-  loop();
+  handleTransformProduct("left");
 };
 btn_nextRight.onclick = function () {
-  clearInterval(interval);
-  loop();
+  handleTransformProduct("right");
 };
+var products = document.querySelector("#products"); // khối cha
+var product = $(".products-product"); // danh sách các khối con
+var z = 0;
+
+function handleTransformProduct(direction) {
+  // nếu hướng là trái
+  if (direction == "left") {
+    products.classList.add("transform-product-left");
+    setTimeout(() => {
+      // Xóa khối con
+      $(product[z]).addClass("displayNone");
+
+      // Thêm khối con hiện tại vào cuối danh sách khối cha
+      $(product[z]).remove().appendTo(products).removeClass("displayNone");
+
+      // Tính toán chỉ số cho khối tiếp theo
+      z = (z + 1) % product.length;
+
+      // delete effect in block dad
+      products.classList.remove("transform-product-left");
+    }, 3000);
+  } else if (direction == "right") {
+    products.classList.add("transform-product-right");
+    products.classList.add("flex-row-reverse");
+    setTimeout(() => {
+      // Xóa khối con
+      $(product[z]).addClass("displayNone");
+
+      // Thêm khối con hiện tại vào cuối danh sách khối cha
+      $(product[z]).remove().appendTo(products).removeClass("displayNone");
+
+      // Tính toán chỉ số cho khối tiếp theo
+      z = (z + 1) % product.length;
+
+      // delete effect in block dad
+      products.classList.remove("transform-product-right");
+    }, 3000);
+  }
+}

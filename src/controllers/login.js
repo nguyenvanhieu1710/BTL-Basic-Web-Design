@@ -34,19 +34,24 @@ $(document).ready(function () {
   };
 
   // handle click on button login
-  $("#btnLogin").on("click", function (e) {
+  $("#btnLogin").on("click", function () {
     if (validate() === false) {
-      alert("validate false");
-      e.preventDefault();
+      // alert("validate false");
       return;
     }
     var email = window.localStorage.getItem(inputEmail.value);
     if (!email || inputPassword.value !== email) {
       alert("Tài khoản hoặc mật khẩu không tồn tại");
-      e.preventDefault();
       return;
     }
     alert("Đăng nhập thành công");
+    if (inputEmail.value == "admin@gmail.com") {
+      window.location =
+        "http://127.0.0.1:5500/src/resources/views/layouts/administration.html";
+    } else {
+      window.location =
+        "http://127.0.0.1:5500/src/resources/views/layouts/home.html";
+    }
   });
 });
 

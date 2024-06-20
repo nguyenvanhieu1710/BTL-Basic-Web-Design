@@ -12,6 +12,99 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../../../public/css/all.css">
     <link rel="stylesheet" href="../../../public/css/home.css">
+    <style>
+        /* CSS transform courses */
+        #courses {
+            width: 1306px;
+            overflow: hidden;
+        }
+
+        .flex-row-reverse {
+            flex-direction: row-reverse;
+        }
+
+        .transform-courses-left {
+            animation: transformCoursesLeft 3s ease-out;
+        }
+
+        .transform-courses-right {
+            animation: transformCoursesRight 3s ease-out;
+        }
+
+        @keyframes transformCoursesLeft {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-435px);
+            }
+        }
+
+        @keyframes transformCoursesRight {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(435px);
+            }
+        }
+    </style>
+    <style>
+        /* CSS transform product */
+        .to-the-left {
+            display: none;
+            position: absolute;
+            left: 0px;
+            animation: opacity 3s ease-out;
+        }
+
+        .to-the-right {
+            display: none;
+            position: absolute;
+            right: 0;
+            animation: opacity 3s ease-out;
+        }
+
+        @keyframes opacity {
+            from {
+                opacity: 0.8;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .transform-product-left {
+            animation: transformProductLeft 3s ease-out;
+        }
+
+        .transform-product-right {
+            animation: transformProductRight 3s ease-out;
+        }
+
+        @keyframes transformProductLeft {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-410px);
+            }
+        }
+
+        @keyframes transformProductRight {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(410px);
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -185,104 +278,149 @@
                         <img class="course__nextImg" src="../../../public/img/arrow-left-red.svg" alt="Arrow Left">
                     </button>
                 </div>
-                <div class="column course__cloumn1 marginLeftRight0375rem">
-                    <div class="blockCourse">
-                        <div class="course__blockImage marginBottom16px">
-                            <img class="course__blockImage-img" src="../../../public/img/thumbnail.webp" alt="">
-                        </div>
-                        <div class="course__descriptionDetailCourse">
-                            <div class="starAndHeart displayFlexAlign-itemsCenterAndJustify-contentSpace-between">
-                                <span class="assess colorHexffbe3d">
-                                    5.0
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <span class="colorHex868990">[65563]</span>
-                                </span>
-                                <div><i class="fa-solid fa-heart"></i></div>
-                            </div>
-                            <a href="">
-                                <span class="fontWeight700 font-size1125rem">
-                                    Lập trình Python cơ bản
-                                </span>
-                            </a>
-                            <div>259 <span class="colorHexb8bcc6">bài học</span></div>
-                            <div>Độ khó: <span class="colorHexb8bcc6">Dễ</span></div>
-                            <div class="colorHex1e90ff">Nghề nghiệp</div>
-                            <div class="course__blockBtnStudyNow">
-                                <button class="course__btnStudyNow btn background-colorHexd54253">
-                                    <span>Học ngay</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column course__cloumn2 marginLeftRight0375rem">
-                    <div class="blockCourse">
-                        <div class="course__blockImage marginBottom16px">
-                            <img class="course__blockImage-img" src="../../../public/img/thumbnail (1).webp" alt="">
-                        </div>
-                        <div class="course__descriptionDetailCourse">
-                            <div class="starAndHeart displayFlexAlign-itemsCenterAndJustify-contentSpace-between">
-                                <span class="assess colorHexffbe3d">
-                                    5.0
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <span class="colorHex868990">[45740]</span>
-                                </span>
-                                <div><i class="fa-solid fa-heart"></i></div>
-                            </div>
-                            <a href="">
-                                <span class="fontWeight700 font-size1125rem">
-                                    Lập trình C cơ bản
-                                </span>
-                            </a>
-                            <div>245 <span class="colorHexb8bcc6">bài học</span></div>
-                            <div>Độ khó: <span class="colorHexb8bcc6">Dễ</span></div>
-                            <div class="colorHex1e90ff">Nghề nghiệp</div>
-                            <div class="course__blockBtnStudyNow">
-                                <button class="course__btnStudyNow btn background-colorHexd54253">
-                                    <span>Học ngay</span>
-                                </button>
+                <div class="" id="courses">
+                    <div class="displayFlex courses__blockChild">
+                        <div class="courses__course marginLeftRight0375rem">
+                            <div class="blockCourse">
+                                <div class="course__blockImage marginBottom16px">
+                                    <img class="course__blockImage-img" src="../../../public/img/thumbnail.webp" alt="">
+                                </div>
+                                <div class="course__descriptionDetailCourse">
+                                    <div
+                                        class="starAndHeart displayFlexAlign-itemsCenterAndJustify-contentSpace-between">
+                                        <span class="assess colorHexffbe3d">
+                                            5.0
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <span class="colorHex868990">[65563]</span>
+                                        </span>
+                                        <div><i class="fa-solid fa-heart"></i></div>
+                                    </div>
+                                    <a href="">
+                                        <span class="fontWeight700 font-size1125rem">
+                                            Lập trình Python cơ bản
+                                        </span>
+                                    </a>
+                                    <div>259 <span class="colorHexb8bcc6">bài học</span></div>
+                                    <div>Độ khó: <span class="colorHexb8bcc6">Dễ</span></div>
+                                    <div class="colorHex1e90ff">Nghề nghiệp</div>
+                                    <div class="course__blockBtnStudyNow">
+                                        <button class="course__btnStudyNow btn background-colorHexd54253">
+                                            <span>Học ngay</span>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="column course__cloumn3 marginLeftRight0375rem">
-                    <div class="blockCourse">
-                        <div class="course__blockImage marginBottom16px">
-                            <img class="course__blockImage-img " src="../../../public/img/thumbnail (2).webp" alt="">
-                        </div>
-                        <div class="course__descriptionDetailCourse">
-                            <div class="starAndHeart displayFlexAlign-itemsCenterAndJustify-contentSpace-between">
-                                <span class="assess colorHexffbe3d">
-                                    5.0
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <span class="colorHex868990">[43731]</span>
-                                </span>
-                                <div><i class="fa-solid fa-heart"></i></div>
+                        <div class="courses__course marginLeftRight0375rem">
+                            <div class="blockCourse">
+                                <div class="course__blockImage marginBottom16px">
+                                    <img class="course__blockImage-img" src="../../../public/img/thumbnail (1).webp"
+                                        alt="">
+                                </div>
+                                <div class="course__descriptionDetailCourse">
+                                    <div
+                                        class="starAndHeart displayFlexAlign-itemsCenterAndJustify-contentSpace-between">
+                                        <span class="assess colorHexffbe3d">
+                                            5.0
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <span class="colorHex868990">[45740]</span>
+                                        </span>
+                                        <div><i class="fa-solid fa-heart"></i></div>
+                                    </div>
+                                    <a href="">
+                                        <span class="fontWeight700 font-size1125rem">
+                                            Lập trình C cơ bản
+                                        </span>
+                                    </a>
+                                    <div>245 <span class="colorHexb8bcc6">bài học</span></div>
+                                    <div>Độ khó: <span class="colorHexb8bcc6">Dễ</span></div>
+                                    <div class="colorHex1e90ff">Nghề nghiệp</div>
+                                    <div class="course__blockBtnStudyNow">
+                                        <button class="course__btnStudyNow btn background-colorHexd54253">
+                                            <span>Học ngay</span>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
-                            <a href="">
-                                <span class="fontWeight700 font-size1125rem">
-                                    Lập trình C++ từ cơ bản đến nâng cao
-                                </span>
-                            </a>
-                            <div>2346 <span class="colorHexb8bcc6">bài học</span></div>
-                            <div>Độ khó: <span class="colorHexb8bcc6">Trung bình</span></div>
-                            <div class="colorHex1e90ff">Nghề nghiệp</div>
-                            <div class="course__blockBtnStudyNow">
-                                <button class="course__btnStudyNow btn background-colorHexd54253">
-                                    <span>Học ngay</span>
-                                </button>
+                        </div>
+                        <div class="courses__course marginLeftRight0375rem">
+                            <div class="blockCourse">
+                                <div class="course__blockImage marginBottom16px">
+                                    <img class="course__blockImage-img " src="../../../public/img/thumbnail (2).webp"
+                                        alt="">
+                                </div>
+                                <div class="course__descriptionDetailCourse">
+                                    <div
+                                        class="starAndHeart displayFlexAlign-itemsCenterAndJustify-contentSpace-between">
+                                        <span class="assess colorHexffbe3d">
+                                            5.0
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <span class="colorHex868990">[43731]</span>
+                                        </span>
+                                        <div><i class="fa-solid fa-heart"></i></div>
+                                    </div>
+                                    <a href="">
+                                        <span class="fontWeight700 font-size1125rem">
+                                            Lập trình C++ từ cơ bản đến nâng cao
+                                        </span>
+                                    </a>
+                                    <div>2346 <span class="colorHexb8bcc6">bài học</span></div>
+                                    <div>Độ khó: <span class="colorHexb8bcc6">Trung bình</span></div>
+                                    <div class="colorHex1e90ff">Nghề nghiệp</div>
+                                    <div class="course__blockBtnStudyNow">
+                                        <button class="course__btnStudyNow btn background-colorHexd54253">
+                                            <span>Học ngay</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="courses__course marginLeftRight0375rem">
+                            <div class="blockCourse">
+                                <div class="course__blockImage marginBottom16px">
+                                    <img class="course__blockImage-img"
+                                        src="../../../public/img/image_processing20230602-1-tiegfu.jpg" alt="">
+                                </div>
+                                <div class="course__descriptionDetailCourse">
+                                    <div
+                                        class="starAndHeart displayFlexAlign-itemsCenterAndJustify-contentSpace-between">
+                                        <span class="assess colorHexffbe3d">
+                                            5.0
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <span class="colorHex868990">[65563]</span>
+                                        </span>
+                                        <div><i class="fa-solid fa-heart"></i></div>
+                                    </div>
+                                    <a href="">
+                                        <span class="fontWeight700 font-size1125rem">
+                                            Cấu trúc dữ liệu và Giải thuật
+                                        </span>
+                                    </a>
+                                    <div>259 <span class="colorHexb8bcc6">bài học</span></div>
+                                    <div>Độ khó: <span class="colorHexb8bcc6">Dễ</span></div>
+                                    <div class="colorHex1e90ff">Nghề nghiệp</div>
+                                    <div class="course__blockBtnStudyNow">
+                                        <button class="course__btnStudyNow btn background-colorHexd54253">
+                                            <span>Học ngay</span>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -525,91 +663,93 @@
                 mang đậm cá tính Techie
             </div>
             <div
-                class="products__blockProducts paddingTopBottom55px displayFlexAlign-itemsCenterAndJustify-contentSpace-between">
-                <div class="displayFlexCenter">
+                class="products__blockProducts paddingTopBottom55px positionRelative displayFlexAlign-itemsCenterAndJustify-contentSpace-between">
+                <div class="displayFlexCenter to-the-left">
                     <button class="products__btnNext" id="products__btnNextLeft">
                         <img class="products__nextImg" src="../../../public/img/arrow-left-red.svg" alt="Arrow Left">
                     </button>
                 </div>
+                <div id="products" class=" displayFlexAlign-itemsCenterAndJustify-contentSpace-between">
 
-                <div class="column width400px" id="products__food">
-                    <div class="displayFlex">
-                        <img src="../../../public/img/food1.webp" alt="Food">
-                        <div class="displayGrid gridRows">
-                            <img class="" src="../../../public/img/food2.webp" alt="Food">
-                            <img src="../../../public/img/food3.webp" alt="Food">
+                    <div class="products-product" id="products__food">
+                        <div class="displayFlex">
+                            <img src="../../../public/img/food1.webp" alt="Food">
+                            <div class="displayGrid gridRows">
+                                <img class="" src="../../../public/img/food2.webp" alt="Food">
+                                <img src="../../../public/img/food3.webp" alt="Food">
+                            </div>
                         </div>
+                        <div class="products__titleUnderImg">Thực phẩm</div>
                     </div>
-                    <div class="products__titleUnderImg">Thực phẩm</div>
-                </div>
 
-                <div class="column width400px" id="products__robot">
-                    <div class="displayFlex">
-                        <img src="../../../public/img/robot1.webp" alt="Robot">
-                        <div class="displayGrid gridRows">
-                            <img class="" src="../../../public/img/robot2 (1).webp" alt="Robot">
-                            <img src="../../../public/img/robot3.webp" alt="Robot">
+                    <div class="products-product" id="products__robot">
+                        <div class="displayFlex">
+                            <img src="../../../public/img/robot1.webp" alt="Robot">
+                            <div class="displayGrid gridRows">
+                                <img class="" src="../../../public/img/robot2 (1).webp" alt="Robot">
+                                <img src="../../../public/img/robot3.webp" alt="Robot">
+                            </div>
                         </div>
+                        <div class="products__titleUnderImg">Robot</div>
                     </div>
-                    <div class="products__titleUnderImg">Robot</div>
-                </div>
 
-                <div class="column width400px" id="products__clothes">
-                    <div class="displayFlex">
-                        <img src="../../../public/img/clothes1.webp" alt="Clothe">
-                        <div class="displayGrid gridRows">
-                            <img class="" src="../../../public/img/clothes2.webp" alt="Clothe">
-                            <img src="../../../public/img/clothes3.webp" alt="Clothe">
+                    <div class="products-product" id="products__clothes">
+                        <div class="displayFlex">
+                            <img src="../../../public/img/clothes1.webp" alt="Clothe">
+                            <div class="displayGrid gridRows">
+                                <img class="" src="../../../public/img/clothes2.webp" alt="Clothe">
+                                <img src="../../../public/img/clothes3.webp" alt="Clothe">
+                            </div>
                         </div>
+                        <div class="products__titleUnderImg">Quần áo</div>
                     </div>
-                    <div class="products__titleUnderImg">Quần áo</div>
-                </div>
 
-                <div class="column width400px displayNone" id="products__mouse">
-                    <div class="displayFlex">
-                        <img src="../../../public/img/accessory1.webp" alt="Mouse">
-                        <div class="displayGrid gridRows">
-                            <img class="" src="../../../public/img/accessory2.webp" alt="Mouse">
-                            <img src="../../../public/img/accessory3.webp" alt="Mouse">
+                    <div class="products-product" id="products__mouse">
+                        <div class="displayFlex">
+                            <img src="../../../public/img/accessory1.webp" alt="Mouse">
+                            <div class="displayGrid gridRows">
+                                <img class="" src="../../../public/img/accessory2.webp" alt="Mouse">
+                                <img src="../../../public/img/accessory3.webp" alt="Mouse">
+                            </div>
                         </div>
+                        <div class="products__titleUnderImg">Phụ kiện</div>
                     </div>
-                    <div class="products__titleUnderImg">Phụ kiện</div>
-                </div>
 
-                <div class="column width400px displayNone" id="products__laptop">
-                    <div class="displayFlex">
-                        <img src="../../../public/img/laptop1.webp" alt="Laptop">
-                        <div class="displayGrid gridRows">
-                            <img class="" src="../../../public/img/laptop2.webp" alt="Laptop">
-                            <img src="../../../public/img/laptop3.webp" alt="Laptop">
+                    <div class="products-product" id="products__laptop">
+                        <div class="displayFlex">
+                            <img src="../../../public/img/laptop1.webp" alt="Laptop">
+                            <div class="displayGrid gridRows">
+                                <img class="" src="../../../public/img/laptop2.webp" alt="Laptop">
+                                <img src="../../../public/img/laptop3.webp" alt="Laptop">
+                            </div>
                         </div>
+                        <div class="products__titleUnderImg">Laptop</div>
                     </div>
-                    <div class="products__titleUnderImg">Laptop</div>
-                </div>
 
-                <div class="column width400px displayNone" id="products__phone">
-                    <div class="displayFlex">
-                        <img src="../../../public/img/phone1.webp" alt="Phone">
-                        <div class="displayGrid gridRows">
-                            <img class="" src="../../../public/img/phone2.webp" alt="Phone">
-                            <img src="../../../public/img/phone3.webp" alt="Phone">
+                    <div class="products-product" id="products__phone">
+                        <div class="displayFlex">
+                            <img src="../../../public/img/phone1.webp" alt="Phone">
+                            <div class="displayGrid gridRows">
+                                <img class="" src="../../../public/img/phone2.webp" alt="Phone">
+                                <img src="../../../public/img/phone3.webp" alt="Phone">
+                            </div>
                         </div>
+                        <div class="products__titleUnderImg">Điện thoại</div>
                     </div>
-                    <div class="products__titleUnderImg">Điện thoại</div>
-                </div>
 
-                <div class="column width400px displayNone" id="products__book">
-                    <div class="displayFlex">
-                        <img id="myImage" src="../../../public/img/book1.webp" alt="Book">
-                        <div class="displayGrid gridRows">
-                            <img class="" src="../../../public/img/book2.webp" alt="Book">
-                            <img src="../../../public/img/book3.webp" alt="Book">
+                    <div class="products-product" id="products__book">
+                        <div class="displayFlex">
+                            <img id="myImage" src="../../../public/img/book1.webp" alt="Book">
+                            <div class="displayGrid gridRows">
+                                <img class="" src="../../../public/img/book2.webp" alt="Book">
+                                <img src="../../../public/img/book3.webp" alt="Book">
+                            </div>
                         </div>
+                        <div class="products__titleUnderImg">Sách</div>
                     </div>
-                    <div class="products__titleUnderImg">Sách</div>
-                </div>
 
-                <div class="displayFlexCenter">
+                </div>
+                <div class="displayFlexCenter to-the-right">
                     <button class="products__btnNext" id="products__btnNextRight">
                         <img class="products__nextImg" src="../../../public/img/arrow-right-red.svg" alt="Arrow Right">
                     </button>
@@ -685,6 +825,7 @@
             </div>
         </div>
     </footer>
+    <script src="../../../public/vendor/jquery/jquery-3.7.1.min.js"></script>
     <script type="module">
         import navigation from "../partials/navigation.js";
         const navTag = document.querySelector("nav");

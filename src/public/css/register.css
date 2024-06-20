@@ -31,3 +31,78 @@ input:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
   box-shadow: inset 0 0 20px 20px #23232329;
 }
+
+/* Responsive */
+/* Tablet(730px) -> ...  */
+@media (max-width: 730px) {
+  .frame {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .frame {
+    margin: 0;
+    min-width: 100%;
+  }
+
+  .title {
+    font-size: 2.25rem;
+    line-height: 2.875rem;
+  }
+
+  .description {
+    display: none;
+  }
+
+  .lastName-firstName {
+    flex-direction: column;
+    /* padding-left: 6px;
+    padding-right: 6px; */
+  }
+
+  .lastName {
+    width: 97%;
+  }
+
+  .name {
+    width: 97%;
+  }
+
+  .input-box {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .inputEmail,
+  .inputPassword {
+    font-size: 1.3rem;
+  }
+
+  .input-box img {
+    width: 38px;
+    height: 40px;
+  }
+
+  #forgetPassword {
+    font-size: larger;
+  }
+
+  .btnLogin {
+    font-size: 1.5rem;
+  }
+
+  .policy {
+    margin-bottom: 10px;
+  }
+
+  .orLoginBy {
+    font-size: larger;
+  }
+
+  .footer {
+    font-size: larger;
+  }
+}

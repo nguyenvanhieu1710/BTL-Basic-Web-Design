@@ -668,6 +668,19 @@ nav {
   );
 }
 
+.products__blockProducts {
+  overflow: hidden;
+}
+
+.products__blockProducts:hover .to-the-left,
+.products__blockProducts:hover .to-the-right {
+  display: block !important;
+}
+
+#products {
+  gap: 1.5rem;
+}
+
 .products__titleUnderImg {
   font-size: 1.15rem;
   font-weight: 700;
@@ -805,14 +818,14 @@ nav {
     justify-content: center;
   }
 
-  .products__blockProducts {
+  /* .products__blockProducts {
     display: flex;
     justify-content: center;
   }
 
   .products__blockProducts .column {
     margin: 0 10px;
-  }
+  } */
 
   footer {
     display: flex;
